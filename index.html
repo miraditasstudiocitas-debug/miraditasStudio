@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miraditas — Lashes · Nails · Spa</title>
+
+  <!--
+  ================================================================
+  MIRADITAS — INDEX.HTML  (versión solo frontend)
+  ================================================================
+
+  📌 ARCHIVOS DEL PROYECTO (deben estar en la misma carpeta):
+     index.html   → Esta página (estructura)
+     styles.css   → Todos los estilos visuales
+     script.js    → Lógica y datos configurables
+
+  📸 LOGO:
+     Coloca tu logo.png en la misma carpeta que index.html.
+
+  🔧 CAMBIOS RÁPIDOS (todos en script.js):
+     - Número de WhatsApp  → const WSP_NUMERO
+     - Servicios           → array SERVICIOS[]
+     - Profesionales       → array EQUIPO[]
+     - Horarios            → array HORARIOS[]
+
+  🚀 DESPLEGAR EN VERCEL:
+     Ver instrucciones al final de script.js
+
+  ================================================================
+  -->
+
+  <!-- Fuentes de Google Fonts — Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- ================================================================
+     HEADER FIJO
+     ================================================================
+     🔧 LOGO: Pon tu logo.png en la misma carpeta que index.html.
+     🔧 NÚMERO WHATSAPP: cambia WSP_NUMERO en script.js.
+     ================================================================ -->
+<header id="header">
+
+  <!-- Logo con imagen → respaldo en texto si la imagen falla -->
+  <a href="#inicio" class="logo">
+    <img
+      src="logo.png"
+      alt="Miraditas"
+      class="logo-img"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"
+    >
+    <span class="logo-fallback" style="display:none">
+      Miraditas<span style="color:var(--rose);font-style:italic">✦</span>
+    </span>
+  </a>
+
+  <!-- Menú de navegación principal -->
+  <nav id="main-nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#equipo">Nuestro Equipo</a>
+    <a href="#agenda">Agenda tu Cita</a>
+    <a href="#opiniones">Opiniones</a>
+  </nav>
+
+  <!-- Botón "Agenda tu cita" — abre la sección del formulario -->
+  <a href="#agenda" class="btn-header">Agenda tu cita</a>
+
+  <!-- Botón hamburguesa visible solo en móvil -->
+  <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+</header>
+
+
+<!-- ================================================================
+     SECCIÓN HERO — INICIO
+     ================================================================ -->
+<section id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-blob"></div>
+  <div class="hero-blob2"></div>
+
+  <!-- Columna izquierda: texto principal -->
+  <div class="hero-content">
+    <div class="hero-badge">✦ Salón de Belleza Premium</div>
+
+    <h1 class="hero-title">
+      Resalta tu belleza<br>con <em>manos expertas</em>
+    </h1>
+
+    <p class="hero-sub">
+      <strong>Especialistas en Lashes, Nails y Spa.</strong><br>
+      Transformamos tu imagen con técnicas de vanguardia
+      y el cuidado que mereces.
+    </p>
+
+    <a href="#agenda" class="btn-hero">
+      AGENDAR AHORA
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </a>
+
+    <div class="hero-stats">
+      <div class="hero-stat"><span>8000+</span><small>Clientas felices</small></div>
+      <div class="hero-stat"><span>5+</span><small>Años de experiencia</small></div>
+      <div class="hero-stat"><span>11</span><small>Servicios premium</small></div>
+    </div>
+  </div>
+
+  <!-- Columna derecha: visual decorativo -->
+  <div class="hero-visual">
+    <div class="hero-visual-inner"></div>
+    <div class="bubble-ring2"></div>
+    <div class="bubble-ring"></div>
+    <div class="bubble-main"></div>
+
+    <div class="hero-bubbles">
+      <div class="hero-icon" style="top:35%;left:38%">💅</div>
+      <div class="hero-icon">👁️</div>
+      <div class="hero-icon">✨</div>
+      <div class="hero-icon">🌸</div>
+      <div class="hero-icon">💋</div>
+      <div class="hero-icon">🧖</div>
+    </div>
+
+    <div class="hero-rating-card">
+      <div class="rc-num">4.9</div>
+      <div class="rc-stars">★★★★★</div>
+      <div class="rc-text">Clientas satisfechas</div>
+    </div>
+
+    <div class="hero-appt-card">
+      <div class="ac-label">Horario de atención</div>
+      <div class="ac-val"><span class="ac-dot"></span>9:00 AM – 7:00 PM</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     SECCIÓN SERVICIOS
+     ================================================================
+     Las tarjetas se generan dinámicamente desde el array SERVICIOS
+     en script.js. Para cambiar servicios, edita ese array.
+     ================================================================ -->
+<section id="servicios">
+  <div class="servicios-header">
+    <div class="section-label">Lo que ofrecemos</div>
+    <h2 class="section-title">Nuestros <em>Servicios</em></h2>
+    <p class="section-desc">
+      Cada servicio está diseñado para resaltar tu belleza natural
+      con técnicas de última generación.
+    </p>
+  </div>
+
+  <!-- Contenedor llenado por renderServicios() en script.js -->
+  <div class="servicios-grid" id="servicios-grid"></div>
+</section>
+
+
+<!-- ================================================================
+     SECCIÓN NUESTRO EQUIPO — CARRUSEL INFINITO
+     ================================================================
+     Las tarjetas se generan dinámicamente desde el array EQUIPO
+     en script.js. El carrusel se mueve automáticamente.
+     ================================================================ -->
+<section id="equipo">
+  <div class="equipo-header">
+    <div class="section-label">Las profesionales</div>
+    <h2 class="section-title">Nuestro <em>Equipo</em></h2>
+    <p class="section-desc">
+      Artistas apasionadas por la belleza, certificadas y con años de experiencia.
+    </p>
+  </div>
+
+  <!-- Carrusel llenado por renderEquipo() en script.js -->
+  <div class="equipo-track-wrap">
+    <div class="equipo-track" id="equipo-track"></div>
+  </div>
+</section>
+
+
+<!-- ================================================================
+     SECCIÓN AGENDA — FORMULARIO DE RESERVA
+     ================================================================
+     Al presionar "Confirmar Reserva":
+       1. Se abre WhatsApp con el mensaje prellenado.
+       2. Se muestra un enlace para agregar la cita a Google Calendar.
+     ================================================================ -->
+<section id="agenda">
+  <div class="agenda-wrap">
+
+    <!-- Columna izquierda: beneficios -->
+    <div class="agenda-info">
+      <div class="section-label">Reserva en línea</div>
+      <h2 class="section-title">Agenda tu <em>Cita</em></h2>
+      <p class="section-desc">
+        Elige el servicio, la profesional y el horario que prefieras.
+        Confirmamos por WhatsApp en minutos.
+      </p>
+      <ul class="agenda-features">
+        <li>Sin cobro de anticipo</li>
+        <li>Confirmación inmediata por WhatsApp</li>
+        <li>Puedes cancelar hasta 2 horas antes</li>
+        <li>Agrega la cita a Google Calendar</li>
+        <li>Múltiples métodos de pago</li>
+      </ul>
+    </div>
+
+    <!-- Columna derecha: formulario -->
+    <div class="form-agenda">
+      <h3>Reserva tu momento 💅</h3>
+
+      <!-- Fila 1: Nombre y Teléfono -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-nombre">Nombre</label>
+          <input type="text" id="f-nombre" placeholder="Tu nombre completo">
+        </div>
+        <div class="form-group">
+          <label for="f-telefono">Teléfono</label>
+          <input type="tel" id="f-telefono" placeholder="3XX XXX XXXX">
+        </div>
+      </div>
+
+      <!-- Fila 2: Servicio y Profesional -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-servicio">Servicio</label>
+          <!-- Llenado dinámicamente por initFormulario() -->
+          <select id="f-servicio"></select>
+        </div>
+        <div class="form-group">
+          <label for="f-profesional">Profesional</label>
+          <!-- Llenado dinámicamente por initFormulario() -->
+          <select id="f-profesional"></select>
+        </div>
+      </div>
+
+      <!-- Fila 3: Fecha y Hora -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="f-fecha">Fecha</label>
+          <input type="date" id="f-fecha">
+        </div>
+        <div class="form-group">
+          <label for="f-hora">Hora</label>
+          <!-- Llenado dinámicamente por initFormulario() -->
+          <select id="f-hora"></select>
+        </div>
+      </div>
+
+      <!-- Fila 4: Método de pago -->
+      <div class="form-group">
+        <label>Método de pago</label>
+        <div class="pago-options" id="pago-options"></div>
+      </div>
+
+      <!-- Botón principal de envío -->
+      <button class="btn-submit" id="btn-agendar">
+        Confirmar Reserva ✨
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================================================================
+     SECCIÓN OPINIONES
+     ================================================================ -->
+<section id="opiniones">
+  <div class="opiniones-header">
+    <div class="section-label">Lo que dicen</div>
+    <h2 class="section-title">Opiniones de <em>clientas</em></h2>
+  </div>
+
+  <!-- Resumen de calificación promedio -->
+  <div class="rating-summary" id="rating-summary"></div>
+
+  <!-- Grid de tarjetas de opinión (contenido estático en script.js) -->
+  <div class="opiniones-grid" id="opiniones-grid"></div>
+</section>
+
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer>
+  <p>© 2026 <strong>Miraditas</strong> · Todos los derechos reservados · Belleza + cuidado profesional</p>
+</footer>
+
+
+<!-- ================================================================
+     BOTÓN FLOTANTE DE WHATSAPP
+     ================================================================
+     🔧 Para cambiar el número, edita WSP_NUMERO en script.js
+        y actualiza también el href de este enlace.
+     ================================================================ -->
+<a
+  id="wsp-float-btn"
+  href="#"
+  target="_blank"
+  class="wsp-float"
+  title="Chatea con nosotras por WhatsApp"
+>
+  <svg viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+
+<!-- ================================================================
+     MODAL — CONFIRMACIÓN DE RESERVA
+     ================================================================
+     Aparece después de presionar "Confirmar Reserva".
+     Muestra botón de WhatsApp y enlace de Google Calendar.
+     ================================================================ -->
+<div class="modal-overlay" id="modal-confirmacion">
+  <div class="modal-box">
+    <div class="modal-icon">🎉</div>
+    <h3 class="modal-title">¡Listo! Tu solicitud fue enviada</h3>
+
+    <!-- Resumen de la cita -->
+    <p class="modal-sub" id="modal-detalle"></p>
+
+    <div class="modal-steps">
+      <div class="modal-step">
+        <span class="step-num">1</span>
+        <span>Envíanos el mensaje por WhatsApp para confirmar tu cita</span>
+      </div>
+      <div class="modal-step">
+        <span class="step-num">2</span>
+        <span>Agrega el recordatorio a tu calendario (opcional)</span>
+      </div>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="modal-btns">
+      <!-- Botón WhatsApp: abre wa.me con mensaje prellenado -->
+      <a class="btn-wsp-modal" id="btn-wsp-confirm" href="#" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        Enviar por WhatsApp
+      </a>
+
+      <!-- Botón Google Calendar: enlace con parámetros prellenados -->
+      <a class="btn-calendar-modal" id="btn-calendar" href="#" target="_blank" rel="noopener">
+        📅 Agregar a Google Calendar
+      </a>
+    </div>
+
+    <button class="btn-close-modal" onclick="cerrarModal('modal-confirmacion')">Cerrar</button>
+  </div>
+</div>
+
+
+<!-- ================================================================
+     MODAL — GALERÍA DE FOTOS POR SERVICIO
+     ================================================================
+     Se abre al hacer clic en una tarjeta de servicio.
+     ================================================================ -->
+<div class="modal-overlay" id="modal-galeria">
+  <div class="galeria-box">
+    <div class="galeria-header">
+      <div class="galeria-header-info">
+        <span id="galeria-emoji" class="galeria-header-emoji">💅</span>
+        <div>
+          <div id="galeria-titulo" class="galeria-header-titulo">Servicio</div>
+          <div id="galeria-cat"    class="galeria-header-cat">Categoría</div>
+        </div>
+      </div>
+      <button class="galeria-cerrar" onclick="cerrarGaleria()" aria-label="Cerrar galería">✕</button>
+    </div>
+
+    <div class="galeria-stage">
+      <button class="galeria-arrow galeria-arrow-prev" id="galeria-prev" onclick="galeriaAnterior()" aria-label="Foto anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="galeria-img-wrap">
+        <img id="galeria-img" src="" alt="" class="galeria-img">
+      </div>
+      <button class="galeria-arrow galeria-arrow-next" id="galeria-next" onclick="galeriaSiguiente()" aria-label="Foto siguiente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+
+    <div class="galeria-info-row">
+      <span id="galeria-desc"     class="galeria-desc-text"></span>
+      <span id="galeria-contador" class="galeria-contador">1 / 4</span>
+    </div>
+
+    <div class="galeria-thumbs" id="galeria-thumbs"></div>
+
+    <div class="galeria-footer">
+      <button class="btn-galeria-agendar" id="btn-galeria-agendar">
+        Agendar este servicio
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contenedor del toast de notificaciones -->
+<div class="toast" id="toast"></div>
+
+<!-- Script principal -->
+<script src="script.js"></script>
+
+</body>
+</html>
