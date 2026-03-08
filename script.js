@@ -172,7 +172,7 @@ const SERVICIOS = [
  */
 const EQUIPO = [
   {
-    nombre:       'Vanesa Herrera',
+    nombre:       'Vanesa Herrera/Lashista',
     cargo:        'Especialista Lashes',
     especialidad: 'Cejas y Pestañas',
     experiencia:  '2 años',
@@ -182,7 +182,7 @@ const EQUIPO = [
     tags:         ['Extensiones', 'Lifting', 'Tinte']
   },
   {
-    nombre:       'Anna Parra',
+    nombre:       'Anna Parra/Lashista',
     cargo:        'Especialista Lashes',
     especialidad: 'Cejas y Pestañas',
     experiencia:  '2 años',
@@ -192,7 +192,7 @@ const EQUIPO = [
     tags:         ['Extensiones', 'Lifting', 'Tinte']
   },
   {
-    nombre:       'Diana Gómez',
+    nombre:       'Diana Gómez/Manicurista',
     cargo:        'Manicurista',
     especialidad: 'Todas las técnicas',
     experiencia:  '20 años',
@@ -203,7 +203,7 @@ const EQUIPO = [
   },
   
   {
-    nombre:       'Dayana Casallas',
+    nombre:       'Dayana Casallas/Manicurista',
     cargo:        'Manicurista',
     especialidad: 'Todas las técnicas',
     experiencia:  '4 años',
