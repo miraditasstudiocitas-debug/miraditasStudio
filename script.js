@@ -61,105 +61,79 @@ const SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxefKKFfbs-dmwZ4GQYW
  */
 const SERVICIOS = [
   {
-    nombre:    'Extensiones de Pestañas',
-    desc:      'Volumen, clásicas o híbridas. Realza tu mirada sin maquillaje.',
-    precio:    80000,
-    emoji:     '👁️',
+    nombre: 'Extensiones de Pestañas',
+    desc: 'Volumen, clásicas o híbridas. Realza tu mirada sin maquillaje.',
+    emoji: '👁️',
     categoria: 'Lashes',
-    imagenes:  ['galeria/lashes/foto1.jpg', 'galeria/lashes/foto2.jpg',
-                 'galeria/lashes/foto3.jpg', 'galeria/lashes/foto4.jpg']
+    imagenes: ['galeria/lashes/foto1.jpg', 'galeria/lashes/foto2.jpg',
+      'galeria/lashes/foto3.jpg', 'galeria/lashes/foto4.jpg']
   },
   {
-    nombre:    'Diseño de Cejas',
-    desc:      'Perfilado, tinte y diseño personalizado para tu rostro.',
-    precio:    30000,
-    emoji:     '✨',
+    nombre: 'Diseño de Cejas',
+    desc: 'Perfilado, tinte y diseño personalizado para tu rostro.',
+
+    emoji: '✨',
     categoria: 'Cejas',
-    imagenes:  ['galeria/cejas/foto1.jpg', 'galeria/cejas/foto2.jpg',
-                 'galeria/cejas/foto3.jpg', 'galeria/cejas/foto4.jpg']
+    imagenes: ['galeria/cejas/foto1.jpg', 'galeria/cejas/foto2.jpg',
+      'galeria/cejas/foto3.jpg', 'galeria/cejas/foto4.jpg']
   },
   {
-    nombre:    'Micropigmentación',
-    desc:      'Cejas y labios con técnica pelo a pelo o efecto polvo.',
-    precio:    350000,
-    emoji:     '💋',
+    nombre: 'Micropigmentación',
+    desc: 'Con técnica pelo a pelo o efecto polvo.',
+
+    emoji: '💋',
     categoria: 'Micropigmentación',
-    imagenes:  ['galeria/micropigmentacion/foto1.jpg', 'galeria/micropigmentacion/foto2.jpg',
-                 'galeria/micropigmentacion/foto3.jpg', 'galeria/micropigmentacion/foto4.jpg']
+    imagenes: ['galeria/micropigmentacion/foto1.jpg', 'galeria/micropigmentacion/foto2.jpg',
+      'galeria/micropigmentacion/foto3.jpg', 'galeria/micropigmentacion/foto4.jpg']
   },
   {
-    nombre:    'Lifting & Laminado',
-    desc:      'Riza y fija tus pestañas o cejas de forma duradera.',
-    precio:    90000,
-    emoji:     '🌿',
+    nombre: 'Lifting & Laminado',
+    desc: 'Riza y fija tus pestañas o cejas de forma duradera.',
+
+    emoji: '🌿',
     categoria: 'Lashes',
-    imagenes:  ['galeria/lifting/foto1.jpg', 'galeria/lifting/foto2.jpg',
-                 'galeria/lifting/foto3.jpg', 'galeria/lifting/foto4.jpg']
+    imagenes: ['galeria/lifting/foto1.jpg', 'galeria/lifting/foto2.jpg',
+      'galeria/lifting/foto3.jpg', 'galeria/lifting/foto4.jpg']
   },
   {
-    nombre:    'Uñas — Todas las técnicas',
-    desc:      'Acrílicas, gel, semipermanente, press-on y nail art.',
-    precio:    60000,
-    emoji:     '💅',
+    nombre: 'Uñas — Todas las técnicas',
+    desc: 'Acrílicas, gel, semipermanente, press-on y nail art.',
+
+    emoji: '💅',
     categoria: 'Nails',
-    imagenes:  ['galeria/unas/foto1.jpg', 'galeria/unas/foto2.jpg',
-                 'galeria/unas/foto3.jpg', 'galeria/unas/foto4.jpg']
+    imagenes: ['galeria/unas/foto1.jpg', 'galeria/unas/foto2.jpg',
+      'galeria/unas/foto3.jpg', 'galeria/unas/foto4.jpg']
   },
   {
-    nombre:    'Limpieza Facial',
-    desc:      'Profunda o express. Piel limpia, luminosa e hidratada.',
-    precio:    80000,
-    emoji:     '🧖',
+    nombre: 'Limpieza Facial',
+    desc: 'Profunda o express. Piel limpia, luminosa e hidratada.',
+
+    emoji: '🧖',
     categoria: 'Facial',
-    imagenes:  ['galeria/facial/foto1.jpg', 'galeria/facial/foto2.jpg',
-                 'galeria/facial/foto3.jpg', 'galeria/facial/foto4.jpg']
+    imagenes: ['galeria/facial/foto1.jpg', 'galeria/facial/foto2.jpg',
+      'galeria/facial/foto3.jpg', 'galeria/facial/foto4.jpg']
   },
+  
   {
-    nombre:    'Tratamientos Corporales',
-    desc:      'Exfoliación, hidratación y envolturas corporales.',
-    precio:    120000,
-    emoji:     '🌸',
-    categoria: 'Spa',
-    imagenes:  ['galeria/spa/foto1.jpg', 'galeria/spa/foto2.jpg',
-                 'galeria/spa/foto3.jpg', 'galeria/spa/foto4.jpg']
-  },
-  {
-    nombre:    'Maquillaje Profesional',
-    desc:      'Para eventos, novias o sesiones. Duración garantizada.',
-    precio:    100000,
-    emoji:     '🎨',
+    nombre: 'Maquillaje Profesional',
+    desc: 'Para eventos, novias o sesiones. Duración garantizada.',
+
+    emoji: '🎨',
     categoria: 'Maquillaje',
-    imagenes:  ['galeria/maquillaje/foto1.jpg', 'galeria/maquillaje/foto2.jpg',
-                 'galeria/maquillaje/foto3.jpg', 'galeria/maquillaje/foto4.jpg']
+    imagenes: ['galeria/maquillaje/foto1.jpg', 'galeria/maquillaje/foto2.jpg',
+      'galeria/maquillaje/foto3.jpg', 'galeria/maquillaje/foto4.jpg']
   },
   {
-    nombre:    'Keratina',
-    desc:      'Alisa, hidrata y elimina el frizz. Resultado de hasta 6 meses.',
-    precio:    200000,
-    emoji:     '💈',
+    nombre: 'Keratina',
+    desc: 'Alisa, hidrata y elimina el frizz. Resultado de hasta 6 meses.',
+
+    emoji: '💈',
     categoria: 'Cabello',
-    imagenes:  ['galeria/keratina/foto1.jpg', 'galeria/keratina/foto2.jpg',
-                 'galeria/keratina/foto3.jpg', 'galeria/keratina/foto4.jpg']
+    imagenes: ['galeria/keratina/foto1.jpg', 'galeria/keratina/foto2.jpg',
+      'galeria/keratina/foto3.jpg', 'galeria/keratina/foto4.jpg']
   },
-  {
-    nombre:    'Lipólisis Láser',
-    desc:      'Reduce medidas y moldea el cuerpo sin cirugía.',
-    precio:    180000,
-    emoji:     '⚡',
-    categoria: 'Cuerpo',
-    imagenes:  ['galeria/lipolisis/foto1.jpg', 'galeria/lipolisis/foto2.jpg',
-                 'galeria/lipolisis/foto3.jpg', 'galeria/lipolisis/foto4.jpg']
-  },
-  {
-    nombre:    'Masajes Reductores',
-    desc:      'Drenaje linfático y masajes reductores profesionales.',
-    precio:    90000,
-    emoji:     '💆',
-    categoria: 'Cuerpo',
-    imagenes:  ['galeria/masajes/foto1.jpg', 'galeria/masajes/foto2.jpg',
-                 'galeria/masajes/foto3.jpg', 'galeria/masajes/foto4.jpg']
-  }
-];
+  
+  ];
 
 /**
  * 🔧 EQUIPO — Profesionales
@@ -172,45 +146,45 @@ const SERVICIOS = [
  */
 const EQUIPO = [
   {
-    nombre:       'Vanesa Herrera/Lashista',
-    cargo:        'Especialista Lashes',
+    nombre: 'Vanesa Herrera/Lashista',
+    cargo: 'Especialista Lashes',
     especialidad: 'Cejas y Pestañas',
-    experiencia:  '2 años',
-    desc:         'Artista de la mirada con certificación',
-    emoji:        '💁',
-    foto:         'fotos/vanesa.jpg',
-    tags:         ['Extensiones', 'Lifting', 'Tinte']
+    experiencia: '2 años',
+    desc: 'Artista de la mirada con certificación',
+    emoji: '💁',
+    foto: 'fotos/vanesa.jpg',
+    tags: ['Extensiones', 'Lifting', 'Tinte']
   },
   {
-    nombre:       'Anna Parra/Lashista',
-    cargo:        'Especialista Lashes',
+    nombre: 'Anna Parra/Lashista',
+    cargo: 'Especialista Lashes',
     especialidad: 'Cejas y Pestañas',
-    experiencia:  '2 años',
-    desc:         'Artista de la mirada con certificación',
-    emoji:        '👩‍🎨',
-    foto:         'fotos/Anna.jpg',
-    tags:         ['Extensiones', 'Lifting', 'Tinte']
+    experiencia: '2 años',
+    desc: 'Artista de la mirada con certificación',
+    emoji: '👩‍🎨',
+    foto: 'fotos/Anna.jpg',
+    tags: ['Extensiones', 'Lifting', 'Tinte']
   },
   {
-    nombre:       'Diana Gómez/Manicurista',
-    cargo:        'Manicurista',
+    nombre: 'Diana Gómez/Manicurista',
+    cargo: 'Manicurista',
     especialidad: 'Todas las técnicas',
-    experiencia:  '20 años',
-    desc:         'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
-    emoji:        '🧖‍♀️',
-    foto:         'fotos/diana.jpg',
-    tags:         ['Gel', 'Acrílico', 'Nail Art']
+    experiencia: '20 años',
+    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
+    emoji: '🧖‍♀️',
+    foto: 'fotos/diana.jpg',
+    tags: ['Gel', 'Acrílico', 'Nail Art']
   },
-  
+
   {
-    nombre:       'Dayana Casallas/Manicurista',
-    cargo:        'Manicurista',
+    nombre: 'Dayana Casallas/Manicurista',
+    cargo: 'Manicurista',
     especialidad: 'Todas las técnicas',
-    experiencia:  '4 años',
-    desc:         'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
-    emoji:        '🧖‍♀️',
-    foto:         'fotos/dayana.jpg',
-    tags:         ['Gel', 'Acrílico', 'Nail Art']
+    experiencia: '4 años',
+    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
+    emoji: '🧖‍♀️',
+    foto: 'fotos/dayana.jpg',
+    tags: ['Gel', 'Acrílico', 'Nail Art']
   },
 ];
 
@@ -243,46 +217,46 @@ let pagoSeleccionado = '';
  */
 const OPINIONES = [
   {
-    nombre:    'Andrea M.',
-    servicio:  'Extensiones de Pestañas',
+    nombre: 'Andrea M.',
+    servicio: 'Extensiones de Pestañas',
     estrellas: 5,
     comentario: 'Increíble trabajo, mis pestañas quedaron perfectas. Valentina es una artista.',
-    emoji:     '💁'
+    emoji: '💁'
   },
   {
-    nombre:    'Sofía R.',
-    servicio:  'Uñas Gel',
+    nombre: 'Sofía R.',
+    servicio: 'Uñas Gel',
     estrellas: 5,
     comentario: 'Camila hizo magia en mis manos. El diseño duró más de 3 semanas impecable.',
-    emoji:     '💅'
+    emoji: '💅'
   },
   {
-    nombre:    'María P.',
-    servicio:  'Limpieza Facial',
+    nombre: 'María P.',
+    servicio: 'Limpieza Facial',
     estrellas: 5,
     comentario: 'Mi piel quedó como seda. Daniela me explicó todo el proceso. Volvería mil veces.',
-    emoji:     '🧖'
+    emoji: '🧖'
   },
   {
-    nombre:    'Carolina V.',
-    servicio:  'Micropigmentación',
+    nombre: 'Carolina V.',
+    servicio: 'Micropigmentación',
     estrellas: 5,
     comentario: 'Laura es una profesional. Mis cejas quedaron naturales y simétricas. El mejor dinero invertido.',
-    emoji:     '✨'
+    emoji: '✨'
   },
   {
-    nombre:    'Paola L.',
-    servicio:  'Lifting & Laminado',
+    nombre: 'Paola L.',
+    servicio: 'Lifting & Laminado',
     estrellas: 5,
     comentario: 'Me enamoré del resultado. Mis pestañas se ven increíbles sin rizador. ¡Totalmente recomendado!',
-    emoji:     '🌸'
+    emoji: '🌸'
   },
   {
-    nombre:    'Isabella T.',
-    servicio:  'Maquillaje Profesional',
+    nombre: 'Isabella T.',
+    servicio: 'Maquillaje Profesional',
     estrellas: 5,
     comentario: 'Para mi boda pedí maquillaje y quedé espectacular. Duró todo el día. Gracias Miraditas 💕',
-    emoji:     '💋'
+    emoji: '💋'
   }
 ];
 
@@ -318,7 +292,7 @@ async function consultarOcupados(fecha, profesional) {
   try {
     const url = `${SHEETS_URL}?accion=ocupados&fecha=${encodeURIComponent(fecha)}&profesional=${encodeURIComponent(profesional)}`;
     // redirect:'follow' es esencial — Google Apps Script redirige la petición
-    const res  = await fetch(url, { redirect: 'follow' });
+    const res = await fetch(url, { redirect: 'follow' });
     const json = await res.json();
     return json.ok ? json.ocupados : [];
   } catch (err) {
@@ -345,17 +319,17 @@ async function guardarCitaEnSheets(cita) {
   // Enviamos todos los datos como parámetros GET para evitar el bloqueo CORS
   // Google Apps Script redirige — redirect:'follow' es obligatorio
   const params = new URLSearchParams({
-    accion:      'guardar',
-    nombre:      cita.nombre.trim(),
-    telefono:    cita.telefono.trim(),
-    servicio:    cita.servicio.trim(),
+    accion: 'guardar',
+    nombre: cita.nombre.trim(),
+    telefono: cita.telefono.trim(),
+    servicio: cita.servicio.trim(),
     profesional: cita.profesional.trim(),
-    fecha:       cita.fecha.trim(),
-    hora:        cita.hora.trim(),
-    pago:        (cita.pago || '').trim()
+    fecha: cita.fecha.trim(),
+    hora: cita.hora.trim(),
+    pago: (cita.pago || '').trim()
   });
 
-  const res  = await fetch(`${SHEETS_URL}?${params.toString()}`, { redirect: 'follow' });
+  const res = await fetch(`${SHEETS_URL}?${params.toString()}`, { redirect: 'follow' });
 
   // Si la respuesta no es OK a nivel HTTP, lanzar error (no dejar pasar silenciosamente)
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -473,7 +447,7 @@ function renderServicios() {
    ================================================================ */
 
 // Variables de estado de la galería (índice actual y fotos del servicio)
-let galeriaIndice   = 0;
+let galeriaIndice = 0;
 let galeriaImagenes = [];
 
 /**
@@ -481,15 +455,15 @@ let galeriaImagenes = [];
  * @param {number} idx - Índice del servicio en el array SERVICIOS.
  */
 function abrirGaleria(idx) {
-  const servicio  = SERVICIOS[idx];
+  const servicio = SERVICIOS[idx];
   galeriaImagenes = servicio.imagenes || [];
-  galeriaIndice   = 0;
+  galeriaIndice = 0;
 
   // Rellenar la cabecera del modal con los datos del servicio
   document.getElementById('galeria-titulo').textContent = servicio.nombre;
-  document.getElementById('galeria-emoji').textContent  = servicio.emoji;
-  document.getElementById('galeria-cat').textContent    = servicio.categoria;
-  document.getElementById('galeria-desc').textContent   = servicio.desc;
+  document.getElementById('galeria-emoji').textContent = servicio.emoji;
+  document.getElementById('galeria-cat').textContent = servicio.categoria;
+  document.getElementById('galeria-desc').textContent = servicio.desc;
 
   // El botón "Agendar este servicio" preselecciona el servicio en el formulario
   document.getElementById('btn-galeria-agendar').onclick = () => {
@@ -507,20 +481,20 @@ window.abrirGaleria = abrirGaleria;
  * Si la imagen no carga, muestra el placeholder SVG automáticamente.
  */
 function renderFotoGaleria() {
-  const total    = galeriaImagenes.length;
-  const src      = galeriaImagenes[galeriaIndice];
-  const img      = document.getElementById('galeria-img');
+  const total = galeriaImagenes.length;
+  const src = galeriaImagenes[galeriaIndice];
+  const img = document.getElementById('galeria-img');
   const contador = document.getElementById('galeria-contador');
-  const thumbs   = document.getElementById('galeria-thumbs');
-  const emoji    = document.getElementById('galeria-emoji').textContent;
-  const titulo   = document.getElementById('galeria-titulo').textContent;
+  const thumbs = document.getElementById('galeria-thumbs');
+  const emoji = document.getElementById('galeria-emoji').textContent;
+  const titulo = document.getElementById('galeria-titulo').textContent;
 
   // Actualizar contador "2 / 4"
   contador.textContent = `${galeriaIndice + 1} / ${total}`;
 
   // Cargar imagen con placeholder si falla
   img.style.opacity = '0';
-  img.onload  = () => { img.style.opacity = '1'; };
+  img.onload = () => { img.style.opacity = '1'; };
   img.onerror = () => {
     img.src = generarPlaceholder(emoji, titulo);
     img.style.opacity = '1';
@@ -529,7 +503,7 @@ function renderFotoGaleria() {
   img.alt = `${titulo} — foto ${galeriaIndice + 1}`;
 
   // Mostrar/ocultar flechas según posición
-  document.getElementById('galeria-prev').style.opacity = galeriaIndice === 0         ? '0.3' : '1';
+  document.getElementById('galeria-prev').style.opacity = galeriaIndice === 0 ? '0.3' : '1';
   document.getElementById('galeria-next').style.opacity = galeriaIndice === total - 1 ? '0.3' : '1';
 
   // Renderizar miniaturas
@@ -564,13 +538,13 @@ window.cerrarGaleria = cerrarGaleria;
 // Navegación por teclado: ← → cambian foto, Esc cierra la galería
 document.addEventListener('keydown', (e) => {
   if (!document.getElementById('modal-galeria').classList.contains('open')) return;
-  if (e.key === 'ArrowLeft')  galeriaAnterior();
+  if (e.key === 'ArrowLeft') galeriaAnterior();
   if (e.key === 'ArrowRight') galeriaSiguiente();
-  if (e.key === 'Escape')     cerrarGaleria();
+  if (e.key === 'Escape') cerrarGaleria();
 });
 
 // Cerrar al hacer clic en el fondo oscuro del modal
-document.getElementById('modal-galeria').addEventListener('click', function(e) {
+document.getElementById('modal-galeria').addEventListener('click', function (e) {
   if (e.target === this) cerrarGaleria();
 });
 
@@ -689,9 +663,9 @@ window.selectPago = selectPago;
  * Muestra un spinner en el select mientras carga.
  */
 async function actualizarHorasDisponibles() {
-  const fecha       = document.getElementById('f-fecha').value;
+  const fecha = document.getElementById('f-fecha').value;
   const profesional = document.getElementById('f-profesional').value;
-  const selHora     = document.getElementById('f-hora');
+  const selHora = document.getElementById('f-hora');
 
   // Resetear el select primero
   selHora.innerHTML = '<option value="">— Selecciona hora —</option>' +
@@ -762,12 +736,12 @@ function generarEnlaceCalendar(cita) {
   const fechaHoraInicio = cita.fecha.replace(/-/g, '') + 'T' + cita.hora.replace(':', '') + '00';
 
   // Calcular hora de fin (1 hora después del inicio)
-  const [hh, mm]    = cita.hora.split(':').map(Number);
-  const horaFin     = String(hh + 1).padStart(2, '0') + mm.toString().padStart(2, '0');
+  const [hh, mm] = cita.hora.split(':').map(Number);
+  const horaFin = String(hh + 1).padStart(2, '0') + mm.toString().padStart(2, '0');
   const fechaHoraFin = cita.fecha.replace(/-/g, '') + 'T' + horaFin + '00';
 
   // Texto del evento
-  const titulo  = `Cita en Miraditas — ${cita.servicio}`;
+  const titulo = `Cita en Miraditas — ${cita.servicio}`;
   const detalle =
     `Cita agendada en Miraditas Salón de Belleza.\n\n` +
     `👤 Cliente: ${cita.nombre}\n` +
@@ -777,9 +751,9 @@ function generarEnlaceCalendar(cita) {
 
   // Construir la URL de Google Calendar
   const params = new URLSearchParams({
-    action:  'TEMPLATE',
-    text:    titulo,
-    dates:   `${fechaHoraInicio}/${fechaHoraFin}`,
+    action: 'TEMPLATE',
+    text: titulo,
+    dates: `${fechaHoraInicio}/${fechaHoraFin}`,
     details: detalle,
     location: 'Miraditas Salón de Belleza'
   });
@@ -800,12 +774,12 @@ function generarEnlaceCalendar(cita) {
  *   7. Limpia el formulario.
  */
 document.getElementById('btn-agendar').addEventListener('click', async function () {
-  const nombre      = document.getElementById('f-nombre').value.trim();
-  const telefono    = document.getElementById('f-telefono').value.trim();
-  const servicio    = document.getElementById('f-servicio').value;
+  const nombre = document.getElementById('f-nombre').value.trim();
+  const telefono = document.getElementById('f-telefono').value.trim();
+  const servicio = document.getElementById('f-servicio').value;
   const profesional = document.getElementById('f-profesional').value;
-  const fecha       = document.getElementById('f-fecha').value;
-  const hora        = document.getElementById('f-hora').value;
+  const fecha = document.getElementById('f-fecha').value;
+  const hora = document.getElementById('f-hora').value;
 
   // --- Validación ---
   if (!nombre || !telefono || !servicio || !profesional || !fecha || !hora) {
@@ -824,10 +798,10 @@ document.getElementById('btn-agendar').addEventListener('click', async function 
   }
 
   // --- Spinner: deshabilitar botón mientras se procesa ---
-  const btnAgendar   = document.getElementById('btn-agendar');
+  const btnAgendar = document.getElementById('btn-agendar');
   const textoOriginal = btnAgendar.textContent;
   btnAgendar.textContent = '⏳ Verificando disponibilidad...';
-  btnAgendar.disabled    = true;
+  btnAgendar.disabled = true;
 
   try {
     const cita = { nombre, telefono, servicio, profesional, fecha, hora, pago: pagoSeleccionado };
@@ -883,7 +857,7 @@ document.getElementById('btn-agendar').addEventListener('click', async function 
        🔖 Código: <strong style="color:var(--rose-deep)">${citaId}</strong>`;
 
     document.getElementById('btn-wsp-confirm').href = urlWsp;
-    document.getElementById('btn-calendar').href    = urlCalendar;
+    document.getElementById('btn-calendar').href = urlCalendar;
 
     abrirModal('modal-confirmacion');
     resetFormulario();
@@ -898,18 +872,18 @@ document.getElementById('btn-agendar').addEventListener('click', async function 
   } finally {
     // Siempre restaurar el botón al estado original
     btnAgendar.textContent = textoOriginal;
-    btnAgendar.disabled    = false;
+    btnAgendar.disabled = false;
   }
 });
 
 /** Limpia todos los campos del formulario después de agendar */
 function resetFormulario() {
-  document.getElementById('f-nombre').value               = '';
-  document.getElementById('f-telefono').value             = '';
-  document.getElementById('f-servicio').selectedIndex     = 0;
-  document.getElementById('f-profesional').selectedIndex  = 0;
-  document.getElementById('f-fecha').value                = '';
-  document.getElementById('f-hora').selectedIndex         = 0;
+  document.getElementById('f-nombre').value = '';
+  document.getElementById('f-telefono').value = '';
+  document.getElementById('f-servicio').selectedIndex = 0;
+  document.getElementById('f-profesional').selectedIndex = 0;
+  document.getElementById('f-fecha').value = '';
+  document.getElementById('f-hora').selectedIndex = 0;
   pagoSeleccionado = '';
   document.querySelectorAll('.pago-btn').forEach(b => b.classList.remove('active'));
 }
@@ -922,7 +896,7 @@ function resetFormulario() {
    Para actualizarlas, edita ese array al inicio de este archivo.
    ================================================================ */
 function renderOpiniones() {
-  const grid    = document.getElementById('opiniones-grid');
+  const grid = document.getElementById('opiniones-grid');
   const summary = document.getElementById('rating-summary');
 
   // Calcular calificación promedio
@@ -956,15 +930,15 @@ function renderOpiniones() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        e.target.style.opacity   = '1';
+        e.target.style.opacity = '1';
         e.target.style.transform = 'translateY(0)';
       }
     });
   }, { threshold: 0.1 });
 
   document.querySelectorAll('.card-opinion').forEach(el => {
-    el.style.opacity    = '0';
-    el.style.transform  = 'translateY(20px)';
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity .5s ease, transform .5s ease';
     observer.observe(el);
   });
@@ -991,7 +965,7 @@ window.addEventListener('scroll', () => {
 });
 
 /** Cerrar modal de confirmación al hacer clic en el fondo oscuro */
-document.getElementById('modal-confirmacion').addEventListener('click', function(e) {
+document.getElementById('modal-confirmacion').addEventListener('click', function (e) {
   if (e.target === this) cerrarModal('modal-confirmacion');
 });
 
