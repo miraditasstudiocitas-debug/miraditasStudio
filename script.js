@@ -65,8 +65,8 @@ const SERVICIOS = [
     desc: 'Volumen, clásicas o híbridas. Realza tu mirada sin maquillaje.',
     emoji: '👁️',
     categoria: 'Lashes',
-    imagenes: ['galeria/lashes/foto1.jpg', 'galeria/lashes/foto2.jpg',
-      'galeria/lashes/foto3.jpg', 'galeria/lashes/foto4.jpg']
+    imagenes: ['galeria/lashes/foto1.jpeg', 'galeria/lashes/foto2.jpeg',
+      'galeria/lashes/foto3.jpeg', 'galeria/lashes/foto4.jpeg']
   },
   {
     nombre: 'Diseño de Cejas',
@@ -74,8 +74,8 @@ const SERVICIOS = [
 
     emoji: '✨',
     categoria: 'Cejas',
-    imagenes: ['galeria/cejas/foto1.jpg', 'galeria/cejas/foto2.jpg',
-      'galeria/cejas/foto3.jpg', 'galeria/cejas/foto4.jpg']
+    imagenes: ['galeria/cejas/foto1.jpeg', 'galeria/cejas/foto2.jpeg',
+      'galeria/cejas/foto3.jpeg', 'galeria/cejas/foto4.jpeg']
   },
   {
     nombre: 'Micropigmentación',
@@ -83,8 +83,8 @@ const SERVICIOS = [
 
     emoji: '💋',
     categoria: 'Micropigmentación',
-    imagenes: ['galeria/micropigmentacion/foto1.jpg', 'galeria/micropigmentacion/foto2.jpg',
-      'galeria/micropigmentacion/foto3.jpg', 'galeria/micropigmentacion/foto4.jpg']
+    imagenes: ['galeria/micropigmentacion/foto1.jpeg', 'galeria/micropigmentacion/foto2.jpeg',
+      'galeria/micropigmentacion/foto3.jpeg', 'galeria/micropigmentacion/foto4.jpeg']
   },
   {
     nombre: 'Lifting & Laminado',
@@ -92,8 +92,8 @@ const SERVICIOS = [
 
     emoji: '🌿',
     categoria: 'Lashes',
-    imagenes: ['galeria/lifting/foto1.jpg', 'galeria/lifting/foto2.jpg',
-      'galeria/lifting/foto3.jpg', 'galeria/lifting/foto4.jpg']
+    imagenes: ['galeria/lifting/foto1.jpeg', 'galeria/lifting/foto2.jpeg',
+      'galeria/lifting/foto3.jpeg', 'galeria/lifting/foto4.jpeg']
   },
   {
     nombre: 'Uñas — Todas las técnicas',
@@ -101,8 +101,8 @@ const SERVICIOS = [
 
     emoji: '💅',
     categoria: 'Nails',
-    imagenes: ['galeria/unas/foto1.jpg', 'galeria/unas/foto2.jpg',
-      'galeria/unas/foto3.jpg', 'galeria/unas/foto4.jpg']
+    imagenes: ['galeria/unas/foto1.jpeg', 'galeria/unas/foto2.jpeg',
+      'galeria/unas/foto3.jpeg', 'galeria/unas/foto4.jpeg']
   },
   {
     nombre: 'Limpieza Facial',
@@ -110,8 +110,8 @@ const SERVICIOS = [
 
     emoji: '🧖',
     categoria: 'Facial',
-    imagenes: ['galeria/facial/foto1.jpg', 'galeria/facial/foto2.jpg',
-      'galeria/facial/foto3.jpg', 'galeria/facial/foto4.jpg']
+    imagenes: ['galeria/facial/foto1.jpeg', 'galeria/facial/foto2.jpeg',
+      'galeria/facial/foto3.jpeg', 'galeria/facial/foto4.jpeg']
   },
   
   {
@@ -120,8 +120,8 @@ const SERVICIOS = [
 
     emoji: '🎨',
     categoria: 'Maquillaje',
-    imagenes: ['galeria/maquillaje/foto1.jpg', 'galeria/maquillaje/foto2.jpg',
-      'galeria/maquillaje/foto3.jpg', 'galeria/maquillaje/foto4.jpg']
+    imagenes: ['galeria/maquillaje/foto1.jpeg', 'galeria/maquillaje/foto2.jpeg',
+      'galeria/maquillaje/foto3.jpeg', 'galeria/maquillaje/foto4.jpeg']
   },
   {
     nombre: 'Keratina',
@@ -129,8 +129,8 @@ const SERVICIOS = [
 
     emoji: '💈',
     categoria: 'Cabello',
-    imagenes: ['galeria/keratina/foto1.jpg', 'galeria/keratina/foto2.jpg',
-      'galeria/keratina/foto3.jpg', 'galeria/keratina/foto4.jpg']
+    imagenes: ['galeria/keratina/foto1.jpeg', 'galeria/keratina/foto2.jpeg',
+      'galeria/keratina/foto3.jpeg', 'galeria/keratina/foto4.jpeg']
   },
   
   ];
