@@ -253,8 +253,7 @@ const SERVICIOS = [
     desc: 'Peticiones, Quejas, Reclamos y Sugerencias',
     emoji: '⚠️',
     categoria: 'pqrs',
-    imagenes: ['galeria/instalaciones/foto1.jpeg', 'galeria/instalaciones/foto2.jpeg',
-      'galeria/instalaciones/foto3.jpeg', 'galeria/instalaciones/foto4.jpeg']
+    
   },
   
   ];
