@@ -217,8 +217,7 @@ const SERVICIOS = [
     desc: 'Diseño artístico y personalizado sobre uñas de poligel.',
     emoji: '🎨',
     categoria: 'Nails',
-    imagenes: ['galeria/unas/foto1.jpeg', 'galeria/unas/foto2.jpeg',
-      'galeria/unas/foto3.jpeg', 'galeria/unas/foto4.jpeg', 'galeria/unas/foto5.jpeg', 'galeria/unas/foto6.jpeg', 'galeria/unas/foto7.jpeg', 'galeria/unas/foto8.jpeg', 'galeria/unas/foto9.jpeg', 'galeria/unas/foto10.jpeg', 'galeria/unas/foto11.jpeg', 'galeria/unas/foto12.jpeg', 'galeria/unas/foto13.jpeg', 'galeria/unas/foto14.jpeg', 'galeria/unas/foto15.jpeg']
+    imagenes: ['galeria/unas/foto1.jpeg', 'galeria/unas/foto2.jpeg','galeria/unas/foto3.jpeg', 'galeria/unas/foto4.jpeg', 'galeria/unas/foto5.jpeg', 'galeria/unas/foto6.jpeg', 'galeria/unas/foto7.jpeg', 'galeria/unas/foto8.jpeg', 'galeria/unas/foto9.jpeg', 'galeria/unas/foto10.jpeg', 'galeria/unas/foto11.jpeg', 'galeria/unas/foto12.jpeg', 'galeria/unas/foto13.jpeg', 'galeria/unas/foto14.jpeg', 'galeria/unas/foto15.jpeg']
   },
   {
     nombre: 'Limpieza Facial',
