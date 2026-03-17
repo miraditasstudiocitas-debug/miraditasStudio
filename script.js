@@ -327,10 +327,10 @@ const EQUIPO = [
     experiencia: '4 años',
     desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
     emoji: '🧖‍♀️',
-    foto: 'fotos/angie.jpeg',
+    foto: 'fotos/angie.png',
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
-  
+
   {
     nombre: 'Andrea Rincón/Gerente',
     cargo: 'Gerente',
