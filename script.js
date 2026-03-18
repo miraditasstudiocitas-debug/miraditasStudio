@@ -84,6 +84,18 @@ const SERVICIOS = [
       'galeria/diseno_depilacion_henna/foto4.jpeg'
     ]
   },
+   {
+  nombre: 'Micropigmentación',
+  desc: 'Técnica semipermanente que define y corrige cejas, labios o delineado, logrando un acabado natural y duradero.',
+  emoji: '🖋️',
+  categoria: 'Brows',
+  imagenes: [
+    'galeria/micropigmentacion/foto1.jpeg',
+    'galeria/micropigmentacion/foto2.jpeg',
+    'galeria/micropigmentacion/foto3.jpeg',
+    'galeria/micropigmentacion/foto4.jpeg'
+  ]
+},
   {
     nombre: 'Retoque de Pestañas',
     desc: 'Mantenimiento de extensiones para conservar su volumen y forma.',
