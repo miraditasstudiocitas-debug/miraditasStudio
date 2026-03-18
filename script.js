@@ -169,6 +169,18 @@ const SERVICIOS = [
       'galeria/maquillaje_profesional/foto4.jpeg'
     ]
   },
+   {
+  nombre: 'Servicios de Estilista',
+  desc: 'Corte, peinados, cepillado y styling profesional para resaltar tu estilo en cualquier ocasión.',
+  emoji: '💇‍♀️',
+  categoria: 'Cabello',
+  imagenes: [
+    'galeria/estilista/foto1.jpeg',
+    'galeria/estilista/foto2.jpeg',
+    'galeria/estilista/foto3.jpeg',
+    'galeria/estilista/foto4.jpeg'
+  ]
+},
   {
     nombre: 'Keratina',
     desc: 'Alisa, hidrata y elimina el frizz.',
