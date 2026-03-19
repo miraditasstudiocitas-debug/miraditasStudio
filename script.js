@@ -163,10 +163,10 @@ const SERVICIOS = [
     emoji: '🎨',
     categoria: 'Maquillaje',
     imagenes: [
-      'galeria/maquillaje_profesional/foto1.jpeg',
-      'galeria/maquillaje_profesional/foto2.jpeg',
-      'galeria/maquillaje_profesional/foto3.jpeg',
-      'galeria/maquillaje_profesional/foto4.jpeg'
+      'galeria/maquillaje_profesional/foto1.jpg',
+      'galeria/maquillaje_profesional/foto2.jpg',
+      'galeria/maquillaje_profesional/foto3.jpg',
+      'galeria/maquillaje_profesional/foto4.jpg'
     ]
   },
    {
@@ -175,10 +175,10 @@ const SERVICIOS = [
   emoji: '💇‍♀️',
   categoria: 'Cabello',
   imagenes: [
-    'galeria/estilista/foto1.jpeg',
-    'galeria/estilista/foto2.jpeg',
-    'galeria/estilista/foto3.jpeg',
-    'galeria/estilista/foto4.jpeg'
+    'galeria/estilista/foto1.jpg',
+    'galeria/estilista/foto2.jpg',
+    'galeria/estilista/foto3.jpg',
+    'galeria/estilista/foto4.jpg'
   ]
 },
   {
