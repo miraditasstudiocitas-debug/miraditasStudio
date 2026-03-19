@@ -66,10 +66,10 @@ const SERVICIOS = [
     emoji: '✨',
     categoria: 'Brows',
     imagenes: [
-      'galeria/diseno_depilacion_cejas/foto1.jpeg',
-      'galeria/diseno_depilacion_cejas/foto2.jpeg',
-      'galeria/diseno_depilacion_cejas/foto3.jpeg',
-      'galeria/diseno_depilacion_cejas/foto4.jpeg'
+      'galeria/diseno_depilacion_cejas/foto1.jpg',
+      'galeria/diseno_depilacion_cejas/foto2.jpg',
+      'galeria/diseno_depilacion_cejas/foto3.jpg',
+      'galeria/diseno_depilacion_cejas/foto4.jpg'
     ]
   },
   {
@@ -78,10 +78,10 @@ const SERVICIOS = [
     emoji: '✨',
     categoria: 'Brows',
     imagenes: [
-      'galeria/diseno_depilacion_henna/foto1.jpeg',
-      'galeria/diseno_depilacion_henna/foto2.jpeg',
-      'galeria/diseno_depilacion_henna/foto3.jpeg',
-      'galeria/diseno_depilacion_henna/foto4.jpeg'
+      'galeria/diseno_depilacion_henna/foto1.jpg',
+      'galeria/diseno_depilacion_henna/foto2.jpg',
+      'galeria/diseno_depilacion_henna/foto3.jpg',
+      'galeria/diseno_depilacion_henna/foto4.jpg'
     ]
   },
    {
@@ -90,10 +90,10 @@ const SERVICIOS = [
   emoji: '🖋️',
   categoria: 'Brows',
   imagenes: [
-    'galeria/micropigmentacion/foto1.jpeg',
-    'galeria/micropigmentacion/foto2.jpeg',
-    'galeria/micropigmentacion/foto3.jpeg',
-    'galeria/micropigmentacion/foto4.jpeg'
+    'galeria/micropigmentacion/foto1.jpg',
+    'galeria/micropigmentacion/foto2.jpg',
+    'galeria/micropigmentacion/foto3.jpg',
+    'galeria/micropigmentacion/foto4.jpg'
   ]
 },
   {
@@ -102,10 +102,10 @@ const SERVICIOS = [
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/retoque_pestanas/foto1.jpeg',
-      'galeria/retoque_pestanas/foto2.jpeg',
-      'galeria/retoque_pestanas/foto3.jpeg',
-      'galeria/retoque_pestanas/foto4.jpeg'
+      'galeria/retoque_pestanas/foto1.jpg',
+      'galeria/retoque_pestanas/foto2.jpg',
+      'galeria/retoque_pestanas/foto3.jpg',
+      'galeria/retoque_pestanas/foto4.jpg'
     ]
   },
   {
@@ -114,10 +114,10 @@ const SERVICIOS = [
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/pestanas_efecto_natural/foto1.jpeg',
-      'galeria/pestanas_efecto_natural/foto2.jpeg',
-      'galeria/pestanas_efecto_natural/foto3.jpeg',
-      'galeria/pestanas_efecto_natural/foto4.jpeg'
+      'galeria/pestanas_efecto_natural/foto1.jpg',
+      'galeria/pestanas_efecto_natural/foto2.jpg',
+      'galeria/pestanas_efecto_natural/foto3.jpg',
+      'galeria/pestanas_efecto_natural/foto4.jpg'
     ]
   },
   {
