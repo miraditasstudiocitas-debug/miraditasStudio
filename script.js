@@ -179,6 +179,54 @@ const SERVICIOS = [
       'galeria/keratina/foto3.jpeg',
       'galeria/keratina/foto4.jpeg'
     ]
+  },
+  {
+    nombre: 'Pedicura Básica',
+    desc: 'Limpieza, corte y limado de uñas con acabado en esmalte clásico.',
+    emoji: '🦶',
+    categoria: 'Pies',
+    imagenes: [
+      'galeria/pedicura_basica/foto1.jpeg',
+      'galeria/pedicura_basica/foto2.jpeg',
+      'galeria/pedicura_basica/foto3.jpeg',
+      'galeria/pedicura_basica/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Pedicura Semipermanente',
+    desc: 'Pedicura completa con esmalte semipermanente de larga duración.',
+    emoji: '🦶',
+    categoria: 'Pies',
+    imagenes: [
+      'galeria/pedicura_semipermanente/foto1.jpeg',
+      'galeria/pedicura_semipermanente/foto2.jpeg',
+      'galeria/pedicura_semipermanente/foto3.jpeg',
+      'galeria/pedicura_semipermanente/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Pedicura Poligel',
+    desc: 'Extensión y diseño de uñas de los pies con poligel para mayor resistencia.',
+    emoji: '🦶',
+    categoria: 'Pies',
+    imagenes: [
+      'galeria/pedicura_poligel/foto1.jpeg',
+      'galeria/pedicura_poligel/foto2.jpeg',
+      'galeria/pedicura_poligel/foto3.jpeg',
+      'galeria/pedicura_poligel/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Spa de Pies',
+    desc: 'Tratamiento relajante con exfoliación, hidratación profunda y masaje de pies.',
+    emoji: '🧖',
+    categoria: 'Pies',
+    imagenes: [
+      'galeria/spa_pies/foto1.jpeg',
+      'galeria/spa_pies/foto2.jpeg',
+      'galeria/spa_pies/foto3.jpeg',
+      'galeria/spa_pies/foto4.jpeg'
+    ]
   }
 ];
 
