@@ -172,18 +172,7 @@ const SERVICIOS = [
       'galeria/pestanas_volumen_ruso/foto4.jpg'
     ]
   },
-  {
-    nombre: 'Pestañas Estilo Premium',
-    desc: 'Extensiones de máxima calidad con materiales premium para una mirada de lujo y larga duración.',
-    emoji: '👁️',
-    categoria: 'Lashes',
-    imagenes: [
-      'galeria/pestanas_estilo_premium/foto1.jpg',
-      'galeria/pestanas_estilo_premium/foto2.jpg',
-      'galeria/pestanas_estilo_premium/foto3.jpg',
-      'galeria/pestanas_estilo_premium/foto4.jpg'
-    ]
-  },
+ 
 
   // ── NAILS ──────────────────────────────────────────────────────
   {
@@ -240,7 +229,7 @@ const SERVICIOS = [
     emoji: '💅',
     categoria: 'Nails',
     imagenes: [
-      'galeria/unas_press_on/foto1.jpeg',
+      'galeria/unas_press_on/foto1.jpg',
       'galeria/unas_press_on/foto2.jpeg',
       'galeria/unas_press_on/foto3.jpeg',
       'galeria/unas_press_on/foto4.jpeg'
@@ -264,10 +253,10 @@ const SERVICIOS = [
     emoji: '💅',
     categoria: 'Nails',
     imagenes: [
-      'galeria/diseno_press_on/foto1.jpeg',
-      'galeria/diseno_press_on/foto2.jpeg',
-      'galeria/diseno_press_on/foto3.jpeg',
-      'galeria/diseno_press_on/foto4.jpeg'
+      'galeria/diseno_press_on/foto1.jpg',
+      'galeria/diseno_press_on/foto2.jpg',
+      'galeria/diseno_press_on/foto3.jpg',
+      'galeria/diseno_press_on/foto4.jpg'
     ]
   },
   {
@@ -276,10 +265,10 @@ const SERVICIOS = [
     emoji: '💅',
     categoria: 'Nails',
     imagenes: [
-      'galeria/diseno_poligel/foto1.jpeg',
-      'galeria/diseno_poligel/foto2.jpeg',
-      'galeria/diseno_poligel/foto3.jpeg',
-      'galeria/diseno_poligel/foto4.jpeg'
+      'galeria/diseno_poligel/foto1.jpg',
+      'galeria/diseno_poligel/foto2.jpg',
+      'galeria/diseno_poligel/foto3.jpg',
+      'galeria/diseno_poligel/foto4.jpg'
     ]
   },
   {
@@ -288,10 +277,10 @@ const SERVICIOS = [
     emoji: '💅',
     categoria: 'Nails',
     imagenes: [
-      'galeria/retiro_semipermanente/foto1.jpeg',
-      'galeria/retiro_semipermanente/foto2.jpeg',
-      'galeria/retiro_semipermanente/foto3.jpeg',
-      'galeria/retiro_semipermanente/foto4.jpeg'
+      'galeria/retiro_semipermanente/foto1.jpg',
+      'galeria/retiro_semipermanente/foto2.jpg',
+      'galeria/retiro_semipermanente/foto3.jpg',
+      'galeria/retiro_semipermanente/foto4.jpg'
     ]
   },
   {
@@ -300,10 +289,10 @@ const SERVICIOS = [
     emoji: '💅',
     categoria: 'Nails',
     imagenes: [
-      'galeria/retiro_press_on/foto1.jpeg',
-      'galeria/retiro_press_on/foto2.jpeg',
-      'galeria/retiro_press_on/foto3.jpeg',
-      'galeria/retiro_press_on/foto4.jpeg'
+      'galeria/retiro_press_on/foto1.jpg',
+      'galeria/retiro_press_on/foto2.jpg',
+      'galeria/retiro_press_on/foto3.jpg',
+      'galeria/retiro_press_on/foto4.jpg'
     ]
   },
 
@@ -314,10 +303,10 @@ const SERVICIOS = [
     emoji: '🦶',
     categoria: 'Pies',
     imagenes: [
-      'galeria/pedicura_tradicional/foto1.jpeg',
-      'galeria/pedicura_tradicional/foto2.jpeg',
-      'galeria/pedicura_tradicional/foto3.jpeg',
-      'galeria/pedicura_tradicional/foto4.jpeg'
+      'galeria/pedicura_tradicional/foto1.jpg',
+      'galeria/pedicura_tradicional/foto2.jpg',
+      'galeria/pedicura_tradicional/foto3.jpg',
+      'galeria/pedicura_tradicional/foto4.jpg'
     ]
   },
   {
@@ -326,10 +315,10 @@ const SERVICIOS = [
     emoji: '🦶',
     categoria: 'Pies',
     imagenes: [
-      'galeria/pedicura_semipermanente/foto1.jpeg',
-      'galeria/pedicura_semipermanente/foto2.jpeg',
-      'galeria/pedicura_semipermanente/foto3.jpeg',
-      'galeria/pedicura_semipermanente/foto4.jpeg'
+      'galeria/pedicura_semipermanente/foto1.jpg',
+      'galeria/pedicura_semipermanente/foto2.jpg',
+      'galeria/pedicura_semipermanente/foto3.jpg',
+      'galeria/pedicura_semipermanente/foto4.jpg'
     ]
   },
 
@@ -340,10 +329,10 @@ const SERVICIOS = [
     emoji: '💈',
     categoria: 'Cabello',
     imagenes: [
-      'galeria/keratina/foto1.jpeg',
-      'galeria/keratina/foto2.jpeg',
-      'galeria/keratina/foto3.jpeg',
-      'galeria/keratina/foto4.jpeg'
+      'galeria/keratina/foto1.jpg',
+      'galeria/keratina/foto2.jpg',
+      'galeria/keratina/foto3.jpg',
+      'galeria/keratina/foto4.jpg'
     ]
   },
   {
@@ -352,10 +341,10 @@ const SERVICIOS = [
     emoji: '💈',
     categoria: 'Cabello',
     imagenes: [
-      'galeria/estilista/foto1.jpeg',
-      'galeria/estilista/foto2.jpeg',
-      'galeria/estilista/foto3.jpeg',
-      'galeria/estilista/foto4.jpeg'
+      'galeria/estilista/foto1.jpg',
+      'galeria/estilista/foto2.jpg',
+      'galeria/estilista/foto3.jpg',
+      'galeria/estilista/foto4.jpg'
     ]
   },
 
@@ -366,10 +355,10 @@ const SERVICIOS = [
     emoji: '🎨',
     categoria: 'Maquillaje',
     imagenes: [
-      'galeria/maquillaje_profesional/foto1.jpeg',
-      'galeria/maquillaje_profesional/foto2.jpeg',
-      'galeria/maquillaje_profesional/foto3.jpeg',
-      'galeria/maquillaje_profesional/foto4.jpeg'
+      'galeria/maquillaje_profesional/foto1.jpg',
+      'galeria/maquillaje_profesional/foto2.jpg',
+      'galeria/maquillaje_profesional/foto3.jpg',
+      'galeria/maquillaje_profesional/foto4.jpg'
     ]
   }
 ];
