@@ -427,16 +427,7 @@ const EQUIPO = [
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
 
-  {
-    nombre: 'Angie Villamizar/Manicurista',
-    cargo: 'Manicurista',
-    especialidad: 'Todas las técnicas',
-    experiencia: '5 años',
-    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
-    emoji: '🧖‍♀️',
-    foto: 'fotos/angie.jpeg',
-    tags: ['Gel', 'Acrílico', 'Nail Art']
-  },
+ 
 
   {
     nombre: 'Dayana Casallas/Manicurista',
