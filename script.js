@@ -66,10 +66,10 @@ const SERVICIOS = [
     emoji: '✨',
     categoria: 'Brows',
     imagenes: [
-      'galeria/diseno_depilacion_cejas/foto1.jpg',
-      'galeria/diseno_depilacion_cejas/foto2.jpg',
-      'galeria/diseno_depilacion_cejas/foto3.jpg',
-      'galeria/diseno_depilacion_cejas/foto4.jpg'
+      'galeria/diseno_depilacion_cejas/foto1.jpeg',
+      'galeria/diseno_depilacion_cejas/foto2.jpeg',
+      'galeria/diseno_depilacion_cejas/foto3.jpeg',
+      'galeria/diseno_depilacion_cejas/foto4.jpeg'
     ]
   },
   {
@@ -78,34 +78,22 @@ const SERVICIOS = [
     emoji: '✨',
     categoria: 'Brows',
     imagenes: [
-      'galeria/diseno_depilacion_henna/foto1.jpg',
-      'galeria/diseno_depilacion_henna/foto2.jpg',
-      'galeria/diseno_depilacion_henna/foto3.jpg',
-      'galeria/diseno_depilacion_henna/foto4.jpg'
+      'galeria/diseno_depilacion_henna/foto1.jpeg',
+      'galeria/diseno_depilacion_henna/foto2.jpeg',
+      'galeria/diseno_depilacion_henna/foto3.jpeg',
+      'galeria/diseno_depilacion_henna/foto4.jpeg'
     ]
   },
-   {
-  nombre: 'Micropigmentación',
-  desc: 'Técnica semipermanente que define y corrige cejas, labios o delineado, logrando un acabado natural y duradero.',
-  emoji: '🖋️',
-  categoria: 'Brows',
-  imagenes: [
-    'galeria/micropigmentacion/foto1.jpg',
-    'galeria/micropigmentacion/foto2.jpg',
-    'galeria/micropigmentacion/foto3.jpg',
-    'galeria/micropigmentacion/foto4.jpg'
-  ]
-},
   {
     nombre: 'Retoque de Pestañas',
     desc: 'Mantenimiento de extensiones para conservar su volumen y forma.',
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/retoque_pestanas/foto1.jpg',
-      'galeria/retoque_pestanas/foto2.jpg',
-      'galeria/retoque_pestanas/foto3.jpg',
-      'galeria/retoque_pestanas/foto4.jpg'
+      'galeria/retoque_pestanas/foto1.jpeg',
+      'galeria/retoque_pestanas/foto2.jpeg',
+      'galeria/retoque_pestanas/foto3.jpeg',
+      'galeria/retoque_pestanas/foto4.jpeg'
     ]
   },
   {
@@ -114,10 +102,10 @@ const SERVICIOS = [
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/pestanas_efecto_natural/foto1.jpg',
-      'galeria/pestanas_efecto_natural/foto2.jpg',
-      'galeria/pestanas_efecto_natural/foto3.jpg',
-      'galeria/pestanas_efecto_natural/foto4.jpg'
+      'galeria/pestanas_efecto_natural/foto1.jpeg',
+      'galeria/pestanas_efecto_natural/foto2.jpeg',
+      'galeria/pestanas_efecto_natural/foto3.jpeg',
+      'galeria/pestanas_efecto_natural/foto4.jpeg'
     ]
   },
   {
@@ -156,31 +144,30 @@ const SERVICIOS = [
       'galeria/unas_poligel/foto4.jpeg'
     ]
   },
-  
+  {
+    nombre: 'Limpieza Facial',
+    desc: 'Profunda o express. Piel limpia, luminosa e hidratada.',
+    emoji: '🧖',
+    categoria: 'Facial',
+    imagenes: [
+      'galeria/limpieza_facial/foto1.jpeg',
+      'galeria/limpieza_facial/foto2.jpeg',
+      'galeria/limpieza_facial/foto3.jpeg',
+      'galeria/limpieza_facial/foto4.jpeg'
+    ]
+  },
   {
     nombre: 'Maquillaje Profesional',
     desc: 'Para eventos, novias o sesiones.',
     emoji: '🎨',
     categoria: 'Maquillaje',
     imagenes: [
-      'galeria/maquillaje_profesional/foto1.jpg',
-      'galeria/maquillaje_profesional/foto2.jpg',
-      'galeria/maquillaje_profesional/foto3.jpg',
-      'galeria/maquillaje_profesional/foto4.jpg'
+      'galeria/maquillaje_profesional/foto1.jpeg',
+      'galeria/maquillaje_profesional/foto2.jpeg',
+      'galeria/maquillaje_profesional/foto3.jpeg',
+      'galeria/maquillaje_profesional/foto4.jpeg'
     ]
   },
-   {
-  nombre: 'Servicios de Estilista',
-  desc: 'Corte, peinados, cepillado y styling profesional para resaltar tu estilo en cualquier ocasión.',
-  emoji: '💇‍♀️',
-  categoria: 'Cabello',
-  imagenes: [
-    'galeria/estilista/foto1.jpg',
-    'galeria/estilista/foto2.jpg',
-    'galeria/estilista/foto3.jpg',
-    'galeria/estilista/foto4.jpg'
-  ]
-},
   {
     nombre: 'Keratina',
     desc: 'Alisa, hidrata y elimina el frizz.',
@@ -473,6 +460,19 @@ window.cerrarModal = cerrarModal; // exponer para el onclick del HTML
  */
 function hoy() {
   return new Date().toISOString().split('T')[0];
+}
+
+/**
+ * Convierte una hora en formato 24h (HH:MM) a formato 12h con AM/PM.
+ * Ejemplo: '09:00' → '9:00 AM', '15:30' → '3:30 PM'
+ * @param {string} hora24 - Hora en formato 'HH:MM'.
+ * @returns {string} Hora en formato '12h AM/PM'.
+ */
+function formatoAmPm(hora24) {
+  const [hh, mm] = hora24.split(':').map(Number);
+  const periodo = hh >= 12 ? 'PM' : 'AM';
+  const hora12 = hh % 12 || 12;
+  return `${hora12}:${String(mm).padStart(2, '0')} ${periodo}`;
 }
 
 /**
@@ -781,7 +781,7 @@ function initFormulario() {
   // Select de horarios (se rellenará con opciones bloqueadas dinámicamente)
   const selHora = document.getElementById('f-hora');
   selHora.innerHTML = '<option value="">— Selecciona hora —</option>' +
-    HORARIOS.map(h => `<option value="${h}">${h}</option>`).join('');
+    HORARIOS.map(h => `<option value="${h}">${formatoAmPm(h)}</option>`).join('');
 
   // Fecha mínima = hoy
   document.getElementById('f-fecha').min = hoy();
@@ -825,7 +825,7 @@ async function actualizarHorasDisponibles() {
 
   // Resetear el select primero
   selHora.innerHTML = '<option value="">— Selecciona hora —</option>' +
-    HORARIOS.map(h => `<option value="${h}">${h}</option>`).join('');
+    HORARIOS.map(h => `<option value="${h}">${formatoAmPm(h)}</option>`).join('');
 
   // Solo consultar si ambos campos están seleccionados
   if (!fecha || !profesional) return;
@@ -842,7 +842,7 @@ async function actualizarHorasDisponibles() {
   selHora.innerHTML = '<option value="">— Selecciona hora —</option>' +
     HORARIOS.map(h => {
       const estaOcupado = ocupados.includes(h.trim());
-      return `<option value="${h.trim()}" ${estaOcupado ? 'disabled' : ''}>${h}  ${estaOcupado ? '❌ Ocupado' : '✅ Disponible'}</option>`;
+      return `<option value="${h.trim()}" ${estaOcupado ? 'disabled' : ''}>${formatoAmPm(h)}  ${estaOcupado ? '❌ Ocupado' : '✅ Disponible'}</option>`;
     }).join('');
 
   selHora.disabled = false;
@@ -993,7 +993,7 @@ document.getElementById('btn-agendar').addEventListener('click', async function 
       `✨ Servicio: ${servicio}\n` +
       `👩 Profesional: ${profesional}\n` +
       `📅 Fecha: ${fecha}\n` +
-      `⏰ Hora: ${hora}\n` +
+      `⏰ Hora: ${formatoAmPm(hora)}\n` +
       `💳 Pago: ${pagoSeleccionado}\n` +
       `🔖 Código: ${citaId}\n\n` +
       `─────────────────────\n` +
@@ -1006,7 +1006,7 @@ document.getElementById('btn-agendar').addEventListener('click', async function 
     // --- Rellenar modal de confirmación ---
     document.getElementById('modal-detalle').innerHTML =
       `<strong>${nombre}</strong> — ${servicio}<br>
-       📅 ${fecha} a las <strong>${hora}</strong><br>
+       📅 ${fecha} a las <strong>${formatoAmPm(hora)}</strong><br>
        👩 Con <strong>${profesional}</strong><br>
        📞 ${telefono}<br>
        💳 Pago: <strong>${pagoSeleccionado}</strong><br>
