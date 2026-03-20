@@ -60,6 +60,7 @@ const SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxefKKFfbs-dmwZ4GQYW
  *    Si la imagen no existe, se muestra un placeholder automático.
  */
 const SERVICIOS = [
+  // ── BROWS ──────────────────────────────────────────────────────
   {
     nombre: 'Diseño y Depilación de Cejas',
     desc: 'Perfilado y depilación para definir la forma natural de tus cejas.',
@@ -82,6 +83,44 @@ const SERVICIOS = [
       'galeria/diseno_depilacion_henna/foto2.jpeg',
       'galeria/diseno_depilacion_henna/foto3.jpeg',
       'galeria/diseno_depilacion_henna/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Laminado de Cejas',
+    desc: 'Tratamiento que fija y define las cejas dándoles forma y volumen duradero.',
+    emoji: '✨',
+    categoria: 'Brows',
+    imagenes: [
+      'galeria/laminado_cejas/foto1.jpeg',
+      'galeria/laminado_cejas/foto2.jpeg',
+      'galeria/laminado_cejas/foto3.jpeg',
+      'galeria/laminado_cejas/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Micropigmentación',
+    desc: 'Técnica semipermanente que rellena y define las cejas con pigmento natural.',
+    emoji: '✨',
+    categoria: 'Brows',
+    imagenes: [
+      'galeria/micropigmentacion/foto1.jpeg',
+      'galeria/micropigmentacion/foto2.jpeg',
+      'galeria/micropigmentacion/foto3.jpeg',
+      'galeria/micropigmentacion/foto4.jpeg'
+    ]
+  },
+
+  // ── LASHES ─────────────────────────────────────────────────────
+  {
+    nombre: 'Lifting de Pestañas',
+    desc: 'Riza y levanta las pestañas naturales desde la raíz para una mirada abierta y definida.',
+    emoji: '👁️',
+    categoria: 'Lashes',
+    imagenes: [
+      'galeria/lifting_pestanas/foto1.jpeg',
+      'galeria/lifting_pestanas/foto2.jpeg',
+      'galeria/lifting_pestanas/foto3.jpeg',
+      'galeria/lifting_pestanas/foto4.jpeg'
     ]
   },
   {
@@ -109,6 +148,56 @@ const SERVICIOS = [
     ]
   },
   {
+    nombre: 'Pestañas Efecto Pestaña',
+    desc: 'Extensiones que imitan el aspecto de unas pestañas naturales amplificadas.',
+    emoji: '👁️',
+    categoria: 'Lashes',
+    imagenes: [
+      'galeria/pestanas_efecto_pestanina/foto1.jpeg',
+      'galeria/pestanas_efecto_pestanina/foto2.jpeg',
+      'galeria/pestanas_efecto_pestanina/foto3.jpeg',
+      'galeria/pestanas_efecto_pestanina/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Pestañas Efecto Semi Natural',
+    desc: 'Extensiones de densidad media para un look elegante entre lo natural y el glamour.',
+    emoji: '👁️',
+    categoria: 'Lashes',
+    imagenes: [
+      'galeria/pestanas_efecto_semi_natural/foto1.jpeg',
+      'galeria/pestanas_efecto_semi_natural/foto2.jpeg',
+      'galeria/pestanas_efecto_semi_natural/foto3.jpeg',
+      'galeria/pestanas_efecto_semi_natural/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Pestañas Volumen Ruso',
+    desc: 'Técnica de mega volumen con abanicos de pestañas ultrafinas para una mirada impactante.',
+    emoji: '👁️',
+    categoria: 'Lashes',
+    imagenes: [
+      'galeria/pestanas_volumen_ruso/foto1.jpeg',
+      'galeria/pestanas_volumen_ruso/foto2.jpeg',
+      'galeria/pestanas_volumen_ruso/foto3.jpeg',
+      'galeria/pestanas_volumen_ruso/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Pestañas Estilo Premium',
+    desc: 'Extensiones de máxima calidad con materiales premium para una mirada de lujo y larga duración.',
+    emoji: '👁️',
+    categoria: 'Lashes',
+    imagenes: [
+      'galeria/pestanas_estilo_premium/foto1.jpeg',
+      'galeria/pestanas_estilo_premium/foto2.jpeg',
+      'galeria/pestanas_estilo_premium/foto3.jpeg',
+      'galeria/pestanas_estilo_premium/foto4.jpeg'
+    ]
+  },
+
+  // ── NAILS ──────────────────────────────────────────────────────
+  {
     nombre: 'Uñas Tradicionales',
     desc: 'Servicio de manicure tradicional con esmalte clásico y acabado profesional.',
     emoji: '💅',
@@ -122,7 +211,7 @@ const SERVICIOS = [
   },
   {
     nombre: 'Uñas Semipermanente',
-    desc: 'Servicio de manicure Semipermanente acabado profesional.',
+    desc: 'Manicure con esmalte semipermanente de larga duración y acabado profesional.',
     emoji: '💅',
     categoria: 'Nails',
     imagenes: [
@@ -133,8 +222,20 @@ const SERVICIOS = [
     ]
   },
   {
+    nombre: 'Uñas Semipermanente Rubber',
+    desc: 'Semipermanente con base rubber de efecto goma para mayor adherencia y durabilidad.',
+    emoji: '💅',
+    categoria: 'Nails',
+    imagenes: [
+      'galeria/unas_semipermanente_rubber/foto1.jpeg',
+      'galeria/unas_semipermanente_rubber/foto2.jpeg',
+      'galeria/unas_semipermanente_rubber/foto3.jpeg',
+      'galeria/unas_semipermanente_rubber/foto4.jpeg'
+    ]
+  },
+  {
     nombre: 'Uñas Poligel',
-    desc: 'Extensión y diseño de uñas con poligel.',
+    desc: 'Extensión y diseño de uñas con poligel para mayor resistencia y durabilidad.',
     emoji: '💅',
     categoria: 'Nails',
     imagenes: [
@@ -145,39 +246,89 @@ const SERVICIOS = [
     ]
   },
   {
-    nombre: 'Maquillaje Profesional',
-    desc: 'Para eventos, novias o sesiones.',
-    emoji: '🎨',
-    categoria: 'Maquillaje',
+    nombre: 'Uñas Press On',
+    desc: 'Uñas postizas personalizadas de aplicación rápida y sin daño en la uña natural.',
+    emoji: '💅',
+    categoria: 'Nails',
     imagenes: [
-      'galeria/maquillaje_profesional/foto1.jpeg',
-      'galeria/maquillaje_profesional/foto2.jpeg',
-      'galeria/maquillaje_profesional/foto3.jpeg',
-      'galeria/maquillaje_profesional/foto4.jpeg'
+      'galeria/unas_press_on/foto1.jpeg',
+      'galeria/unas_press_on/foto2.jpeg',
+      'galeria/unas_press_on/foto3.jpeg',
+      'galeria/unas_press_on/foto4.jpeg'
     ]
   },
   {
-    nombre: 'Keratina',
-    desc: 'Alisa, hidrata y elimina el frizz.',
-    emoji: '💈',
-    categoria: 'Cabello',
+    nombre: 'Uñas Acrílicas',
+    desc: 'Extensión de uñas con acrílico de alta resistencia para mayor durabilidad y diseños impactantes.',
+    emoji: '💅',
+    categoria: 'Nails',
     imagenes: [
-      'galeria/keratina/foto1.jpeg',
-      'galeria/keratina/foto2.jpeg',
-      'galeria/keratina/foto3.jpeg',
-      'galeria/keratina/foto4.jpeg'
+      'galeria/unas_acrilicas/foto1.jpeg',
+      'galeria/unas_acrilicas/foto2.jpeg',
+      'galeria/unas_acrilicas/foto3.jpeg',
+      'galeria/unas_acrilicas/foto4.jpeg'
     ]
   },
   {
-    nombre: 'Pedicura Básica',
-    desc: 'Limpieza, corte y limado de uñas con acabado en esmalte clásico.',
+    nombre: 'Diseño Press On',
+    desc: 'Diseño y fabricación de uñas press on personalizadas con acabados únicos.',
+    emoji: '💅',
+    categoria: 'Nails',
+    imagenes: [
+      'galeria/diseno_press_on/foto1.jpeg',
+      'galeria/diseno_press_on/foto2.jpeg',
+      'galeria/diseno_press_on/foto3.jpeg',
+      'galeria/diseno_press_on/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Diseño Poligel',
+    desc: 'Diseño artístico sobre extensiones de poligel con los acabados más creativos.',
+    emoji: '💅',
+    categoria: 'Nails',
+    imagenes: [
+      'galeria/diseno_poligel/foto1.jpeg',
+      'galeria/diseno_poligel/foto2.jpeg',
+      'galeria/diseno_poligel/foto3.jpeg',
+      'galeria/diseno_poligel/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Retiro Semipermanente',
+    desc: 'Retiro seguro de esmalte semipermanente sin dañar la uña natural.',
+    emoji: '💅',
+    categoria: 'Nails',
+    imagenes: [
+      'galeria/retiro_semipermanente/foto1.jpeg',
+      'galeria/retiro_semipermanente/foto2.jpeg',
+      'galeria/retiro_semipermanente/foto3.jpeg',
+      'galeria/retiro_semipermanente/foto4.jpeg'
+    ]
+  },
+  {
+    nombre: 'Retiro Press On',
+    desc: 'Retiro profesional y seguro de uñas press on sin dañar la uña natural.',
+    emoji: '💅',
+    categoria: 'Nails',
+    imagenes: [
+      'galeria/retiro_press_on/foto1.jpeg',
+      'galeria/retiro_press_on/foto2.jpeg',
+      'galeria/retiro_press_on/foto3.jpeg',
+      'galeria/retiro_press_on/foto4.jpeg'
+    ]
+  },
+
+  // ── PIES ───────────────────────────────────────────────────────
+  {
+    nombre: 'Pedicura Tradicional',
+    desc: 'Limpieza, corte y limado de uñas de los pies con acabado en esmalte clásico.',
     emoji: '🦶',
     categoria: 'Pies',
     imagenes: [
-      'galeria/pedicura_basica/foto1.jpeg',
-      'galeria/pedicura_basica/foto2.jpeg',
-      'galeria/pedicura_basica/foto3.jpeg',
-      'galeria/pedicura_basica/foto4.jpeg'
+      'galeria/pedicura_tradicional/foto1.jpeg',
+      'galeria/pedicura_tradicional/foto2.jpeg',
+      'galeria/pedicura_tradicional/foto3.jpeg',
+      'galeria/pedicura_tradicional/foto4.jpeg'
     ]
   },
   {
@@ -192,28 +343,44 @@ const SERVICIOS = [
       'galeria/pedicura_semipermanente/foto4.jpeg'
     ]
   },
+
+  // ── CABELLO ────────────────────────────────────────────────────
   {
-    nombre: 'Pedicura Poligel',
-    desc: 'Extensión y diseño de uñas de los pies con poligel para mayor resistencia.',
-    emoji: '🦶',
-    categoria: 'Pies',
+    nombre: 'Keratina',
+    desc: 'Alisa, hidrata y elimina el frizz con tratamiento de keratina profesional.',
+    emoji: '💈',
+    categoria: 'Cabello',
     imagenes: [
-      'galeria/pedicura_poligel/foto1.jpeg',
-      'galeria/pedicura_poligel/foto2.jpeg',
-      'galeria/pedicura_poligel/foto3.jpeg',
-      'galeria/pedicura_poligel/foto4.jpeg'
+      'galeria/keratina/foto1.jpeg',
+      'galeria/keratina/foto2.jpeg',
+      'galeria/keratina/foto3.jpeg',
+      'galeria/keratina/foto4.jpeg'
     ]
   },
   {
-    nombre: 'Spa de Pies',
-    desc: 'Tratamiento relajante con exfoliación, hidratación profunda y masaje de pies.',
-    emoji: '🧖',
-    categoria: 'Pies',
+    nombre: 'Estilismo',
+    desc: 'Peinados, ondas, brushing y todo lo que necesitas para lucir impecable.',
+    emoji: '💈',
+    categoria: 'Cabello',
     imagenes: [
-      'galeria/spa_pies/foto1.jpeg',
-      'galeria/spa_pies/foto2.jpeg',
-      'galeria/spa_pies/foto3.jpeg',
-      'galeria/spa_pies/foto4.jpeg'
+      'galeria/estilista/foto1.jpeg',
+      'galeria/estilista/foto2.jpeg',
+      'galeria/estilista/foto3.jpeg',
+      'galeria/estilista/foto4.jpeg'
+    ]
+  },
+
+  // ── MAQUILLAJE ─────────────────────────────────────────────────
+  {
+    nombre: 'Maquillaje Profesional',
+    desc: 'Para eventos, novias o sesiones fotográficas con acabado de larga duración.',
+    emoji: '🎨',
+    categoria: 'Maquillaje',
+    imagenes: [
+      'galeria/maquillaje_profesional/foto1.jpeg',
+      'galeria/maquillaje_profesional/foto2.jpeg',
+      'galeria/maquillaje_profesional/foto3.jpeg',
+      'galeria/maquillaje_profesional/foto4.jpeg'
     ]
   }
 ];
@@ -260,7 +427,16 @@ const EQUIPO = [
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
 
- 
+  {
+    nombre: 'Angie Villamizar/Manicurista',
+    cargo: 'Manicurista',
+    especialidad: 'Todas las técnicas',
+    experiencia: '5 años',
+    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
+    emoji: '🧖‍♀️',
+    foto: 'fotos/angie.jpeg',
+    tags: ['Gel', 'Acrílico', 'Nail Art']
+  },
 
   {
     nombre: 'Dayana Casallas/Manicurista',
@@ -579,8 +755,8 @@ function renderServicios() {
 
   // ── Dots indicadores ──────────────────────────────────────────
   const dotsEl = document.getElementById('srv-dots');
-  const totalDots = Math.ceil(filtrados.length / 3);
-  dotsEl.innerHTML = Array.from({ length: totalDots }, (_, i) =>
+  // Un dot por cada servicio filtrado para navegación precisa
+  dotsEl.innerHTML = Array.from({ length: filtrados.length }, (_, i) =>
     `<div class="srv-dot ${i === 0 ? 'active' : ''}" onclick="srvScrollTo(${i})"></div>`
   ).join('');
 
@@ -599,14 +775,17 @@ function filtrarServicios(cat) {
 
 function srvDesplazar(dir) {
   const track = document.getElementById('servicios-grid');
-  const cardWidth = 260 + 22; // card width + gap
-  track.scrollBy({ left: dir * cardWidth * 2, behavior: 'smooth' });
+  // Calcular el ancho real de una tarjeta desde el DOM para mayor precisión
+  const card = track.querySelector('.srv-card');
+  const cardWidth = card ? card.offsetWidth + 22 : 282;
+  track.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
 }
 
 function srvScrollTo(dotIdx) {
   const track = document.getElementById('servicios-grid');
-  const cardWidth = 260 + 22;
-  track.scrollTo({ left: dotIdx * cardWidth * 3, behavior: 'smooth' });
+  const card = track.querySelector('.srv-card');
+  const cardWidth = card ? card.offsetWidth + 22 : 282;
+  track.scrollTo({ left: dotIdx * cardWidth, behavior: 'smooth' });
 }
 
 function actualizarDots() {
@@ -614,8 +793,9 @@ function actualizarDots() {
   const dotsEl = document.getElementById('srv-dots');
   if (!dotsEl) return;
   const dots = dotsEl.querySelectorAll('.srv-dot');
-  const cardWidth = 260 + 22;
-  const activeDot = Math.round(track.scrollLeft / (cardWidth * 3));
+  const card = track.querySelector('.srv-card');
+  const cardWidth = card ? card.offsetWidth + 22 : 282;
+  const activeDot = Math.round(track.scrollLeft / cardWidth);
   dots.forEach((d, i) => d.classList.toggle('active', i === activeDot));
 }
 
