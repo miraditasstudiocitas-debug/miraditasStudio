@@ -79,10 +79,10 @@ const SERVICIOS = [
     emoji: '✨',
     categoria: 'Brows',
     imagenes: [
-      'galeria/diseno_depilacion_henna/foto1.jpeg',
-      'galeria/diseno_depilacion_henna/foto2.jpeg',
-      'galeria/diseno_depilacion_henna/foto3.jpeg',
-      'galeria/diseno_depilacion_henna/foto4.jpeg'
+      'galeria/diseno_depilacion_henna/foto1.jpg',
+      'galeria/diseno_depilacion_henna/foto2.jpg',
+      'galeria/diseno_depilacion_henna/foto3.jpg',
+      'galeria/diseno_depilacion_henna/foto4.jpg'
     ]
   },
   {
@@ -91,10 +91,10 @@ const SERVICIOS = [
     emoji: '✨',
     categoria: 'Brows',
     imagenes: [
-      'galeria/laminado_cejas/foto1.jpeg',
-      'galeria/laminado_cejas/foto2.jpeg',
-      'galeria/laminado_cejas/foto3.jpeg',
-      'galeria/laminado_cejas/foto4.jpeg'
+      'galeria/laminado_cejas/foto1.jpg',
+      'galeria/laminado_cejas/foto2.jpg',
+      'galeria/laminado_cejas/foto3.jpg',
+      'galeria/laminado_cejas/foto4.jpg'
     ]
   },
   {
@@ -103,10 +103,10 @@ const SERVICIOS = [
     emoji: '✨',
     categoria: 'Brows',
     imagenes: [
-      'galeria/micropigmentacion/foto1.jpeg',
-      'galeria/micropigmentacion/foto2.jpeg',
-      'galeria/micropigmentacion/foto3.jpeg',
-      'galeria/micropigmentacion/foto4.jpeg'
+      'galeria/micropigmentacion/foto1.jpg',
+      'galeria/micropigmentacion/foto2.jpg',
+      'galeria/micropigmentacion/foto3.jpg',
+      'galeria/micropigmentacion/foto4.jpg'
     ]
   },
 
@@ -117,10 +117,10 @@ const SERVICIOS = [
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/lifting_pestanas/foto1.jpeg',
-      'galeria/lifting_pestanas/foto2.jpeg',
-      'galeria/lifting_pestanas/foto3.jpeg',
-      'galeria/lifting_pestanas/foto4.jpeg'
+      'galeria/lifting_pestanas/foto1.jpg',
+      'galeria/lifting_pestanas/foto2.jpg',
+      'galeria/lifting_pestanas/foto3.jpg',
+      'galeria/lifting_pestanas/foto4.jpg'
     ]
   },
   {
@@ -129,10 +129,10 @@ const SERVICIOS = [
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/retoque_pestanas/foto1.jpeg',
-      'galeria/retoque_pestanas/foto2.jpeg',
-      'galeria/retoque_pestanas/foto3.jpeg',
-      'galeria/retoque_pestanas/foto4.jpeg'
+      'galeria/retoque_pestanas/foto1.jpg',
+      'galeria/retoque_pestanas/foto2.jpg',
+      'galeria/retoque_pestanas/foto3.jpg',
+      'galeria/retoque_pestanas/foto4.jpg'
     ]
   },
   {
@@ -141,34 +141,23 @@ const SERVICIOS = [
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/pestanas_efecto_natural/foto1.jpeg',
-      'galeria/pestanas_efecto_natural/foto2.jpeg',
-      'galeria/pestanas_efecto_natural/foto3.jpeg',
-      'galeria/pestanas_efecto_natural/foto4.jpeg'
+      'galeria/pestanas_efecto_natural/foto1.jpg',
+      'galeria/pestanas_efecto_natural/foto2.jpg',
+      'galeria/pestanas_efecto_natural/foto3.jpg',
+      'galeria/pestanas_efecto_natural/foto4.jpg'
     ]
   },
-  {
-    nombre: 'Pestañas Efecto Pestaña',
-    desc: 'Extensiones que imitan el aspecto de unas pestañas naturales amplificadas.',
-    emoji: '👁️',
-    categoria: 'Lashes',
-    imagenes: [
-      'galeria/pestanas_efecto_pestanina/foto1.jpeg',
-      'galeria/pestanas_efecto_pestanina/foto2.jpeg',
-      'galeria/pestanas_efecto_pestanina/foto3.jpeg',
-      'galeria/pestanas_efecto_pestanina/foto4.jpeg'
-    ]
-  },
+  
   {
     nombre: 'Pestañas Efecto Semi Natural',
     desc: 'Extensiones de densidad media para un look elegante entre lo natural y el glamour.',
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/pestanas_efecto_semi_natural/foto1.jpeg',
-      'galeria/pestanas_efecto_semi_natural/foto2.jpeg',
-      'galeria/pestanas_efecto_semi_natural/foto3.jpeg',
-      'galeria/pestanas_efecto_semi_natural/foto4.jpeg'
+      'galeria/pestanas_efecto_semi_natural/foto1.jpg',
+      'galeria/pestanas_efecto_semi_natural/foto2.jpg',
+      'galeria/pestanas_efecto_semi_natural/foto3.jpg',
+      'galeria/pestanas_efecto_semi_natural/foto4.jpg'
     ]
   },
   {
@@ -177,10 +166,10 @@ const SERVICIOS = [
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/pestanas_volumen_ruso/foto1.jpeg',
-      'galeria/pestanas_volumen_ruso/foto2.jpeg',
-      'galeria/pestanas_volumen_ruso/foto3.jpeg',
-      'galeria/pestanas_volumen_ruso/foto4.jpeg'
+      'galeria/pestanas_volumen_ruso/foto1.jpg',
+      'galeria/pestanas_volumen_ruso/foto2.jpg',
+      'galeria/pestanas_volumen_ruso/foto3.jpg',
+      'galeria/pestanas_volumen_ruso/foto4.jpg'
     ]
   },
   {
@@ -189,10 +178,10 @@ const SERVICIOS = [
     emoji: '👁️',
     categoria: 'Lashes',
     imagenes: [
-      'galeria/pestanas_estilo_premium/foto1.jpeg',
-      'galeria/pestanas_estilo_premium/foto2.jpeg',
-      'galeria/pestanas_estilo_premium/foto3.jpeg',
-      'galeria/pestanas_estilo_premium/foto4.jpeg'
+      'galeria/pestanas_estilo_premium/foto1.jpg',
+      'galeria/pestanas_estilo_premium/foto2.jpg',
+      'galeria/pestanas_estilo_premium/foto3.jpg',
+      'galeria/pestanas_estilo_premium/foto4.jpg'
     ]
   },
 
@@ -227,10 +216,10 @@ const SERVICIOS = [
     emoji: '💅',
     categoria: 'Nails',
     imagenes: [
-      'galeria/unas_semipermanente_rubber/foto1.jpeg',
-      'galeria/unas_semipermanente_rubber/foto2.jpeg',
-      'galeria/unas_semipermanente_rubber/foto3.jpeg',
-      'galeria/unas_semipermanente_rubber/foto4.jpeg'
+      'galeria/unas_semipermanente_rubber/foto1.jpg',
+      'galeria/unas_semipermanente_rubber/foto2.jpg',
+      'galeria/unas_semipermanente_rubber/foto3.jpg',
+      'galeria/unas_semipermanente_rubber/foto4.jpg'
     ]
   },
   {
