@@ -67,10 +67,10 @@ const SERVICIOS = [
     emoji: '✨',
     categoria: 'Brows',
     imagenes: [
-      'galeria/diseno_depilacion_cejas/foto1.jpeg',
-      'galeria/diseno_depilacion_cejas/foto2.jpeg',
-      'galeria/diseno_depilacion_cejas/foto3.jpeg',
-      'galeria/diseno_depilacion_cejas/foto4.jpeg'
+      'galeria/diseno_depilacion_cejas/foto1.jpg',
+      'galeria/diseno_depilacion_cejas/foto2.jpg',
+      'galeria/diseno_depilacion_cejas/foto3.jpg',
+      'galeria/diseno_depilacion_cejas/foto4.jpg'
     ]
   },
   {
