@@ -145,18 +145,6 @@ const SERVICIOS = [
     ]
   },
   {
-    nombre: 'Limpieza Facial',
-    desc: 'Profunda o express. Piel limpia, luminosa e hidratada.',
-    emoji: '🧖',
-    categoria: 'Facial',
-    imagenes: [
-      'galeria/limpieza_facial/foto1.jpeg',
-      'galeria/limpieza_facial/foto2.jpeg',
-      'galeria/limpieza_facial/foto3.jpeg',
-      'galeria/limpieza_facial/foto4.jpeg'
-    ]
-  },
-  {
     nombre: 'Maquillaje Profesional',
     desc: 'Para eventos, novias o sesiones.',
     emoji: '🎨',
