@@ -62,6 +62,31 @@ const SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxefKKFfbs-dmwZ4GQYW
 const SERVICIOS = [
   // ── BROWS ──────────────────────────────────────────────────────
   {
+    nombre: 'Depilación con cera',
+    desc: 'un método muy efectivo para lograr una piel suave durante semanas.',
+    emoji: '👁️',
+    categoria: 'Lashes',
+    imagenes: [
+      'galeria/diseno_depilacion_cejas/foto1.jpg',
+      'galeria/diseno_depilacion_cejas/foto2.jpg',
+      'galeria/diseno_depilacion_cejas/foto3.jpg',
+      'galeria/diseno_depilacion_cejas/foto4.jpg'
+    ]
+  },
+  {
+    nombre: 'Depilación bozo',
+    desc: 'elimina el vello de raíz, retrasando el crecimiento del mismo y debilitándolo a lo largo del tiempo.',
+    emoji: '👁️',
+    categoria: 'Lashes',
+    imagenes: [
+      'galeria/diseno_depilacion_cejas/foto1.jpg',
+      'galeria/diseno_depilacion_cejas/foto2.jpg',
+      'galeria/diseno_depilacion_cejas/foto3.jpg',
+      'galeria/diseno_depilacion_cejas/foto4.jpg'
+    ]
+  },
+  
+  {
     nombre: 'Diseño y Depilación de Cejas',
     desc: 'Perfilado y depilación para definir la forma natural de tus cejas.',
     emoji: '✨',
@@ -111,6 +136,7 @@ const SERVICIOS = [
   },
 
   // ── LASHES ─────────────────────────────────────────────────────
+  
   {
     nombre: 'Lifting de Pestañas',
     desc: 'Riza y levanta las pestañas naturales desde la raíz para una mirada abierta y definida.',
