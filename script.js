@@ -707,6 +707,8 @@ function generarPlaceholder(emoji, nombre) {
    ================================================================ */
 // Categoría activa del carrusel de servicios
 let srvCategoriaActiva = 'Todos';
+// Modo de vista: 'carrusel' | 'grilla'
+let srvModoVista = 'carrusel';
 
 function renderServicios() {
   // ── Construir tabs ──────────────────────────────────────────
@@ -718,7 +720,12 @@ function renderServicios() {
             onclick="filtrarServicios('${cat}')">
       ${cat}
     </button>
-  `).join('');
+  `).join('') + `
+    <button class="srv-tab srv-tab-ver-todos" id="btn-ver-todos"
+            onclick="toggleVistaServicios()" title="${srvModoVista === 'carrusel' ? 'Ver todos en grilla' : 'Volver al carrusel'}">
+      ${srvModoVista === 'carrusel' ? '⊞ Ver todos' : '◧ Carrusel'}
+    </button>
+  `;
 
   // ── Filtrar servicios por categoría ──────────────────────────
   const filtrados = srvCategoriaActiva === 'Todos'
@@ -727,6 +734,22 @@ function renderServicios() {
 
   // ── Renderizar tarjetas ──────────────────────────────────────
   const contenedor = document.getElementById('servicios-grid');
+  const wrap = contenedor.closest('.servicios-carousel-wrap') || contenedor.parentElement;
+
+  // Aplicar clase de grilla o carrusel
+  if (srvModoVista === 'grilla') {
+    contenedor.classList.add('srv-modo-grilla');
+    // Ocultar flechas y dots en modo grilla
+    document.getElementById('srv-prev').style.display = 'none';
+    document.getElementById('srv-next').style.display = 'none';
+    document.getElementById('srv-dots').style.display = 'none';
+  } else {
+    contenedor.classList.remove('srv-modo-grilla');
+    document.getElementById('srv-prev').style.display = '';
+    document.getElementById('srv-next').style.display = '';
+    document.getElementById('srv-dots').style.display = '';
+  }
+
   contenedor.innerHTML = filtrados.map((s) => {
     const idx = SERVICIOS.indexOf(s);
     return `
@@ -748,12 +771,18 @@ function renderServicios() {
     `;
   }).join('');
 
-  // ── Dots indicadores ──────────────────────────────────────────
+  // ── Dots indicadores (solo en modo carrusel, máximo 8 dots) ──
   const dotsEl = document.getElementById('srv-dots');
-  // Un dot por cada servicio filtrado para navegación precisa
-  dotsEl.innerHTML = Array.from({ length: filtrados.length }, (_, i) =>
-    `<div class="srv-dot ${i === 0 ? 'active' : ''}" onclick="srvScrollTo(${i})"></div>`
-  ).join('');
+  if (srvModoVista === 'carrusel') {
+    const totalDots = Math.min(filtrados.length, 8);
+    dotsEl.innerHTML = Array.from({ length: totalDots }, (_, i) =>
+      `<div class="srv-dot ${i === 0 ? 'active' : ''}" onclick="srvScrollTo(${i})"></div>`
+    ).join('');
+    // Agregar contador si hay más de 8
+    if (filtrados.length > 8) {
+      dotsEl.innerHTML += `<span class="srv-dots-count">${filtrados.length} servicios</span>`;
+    }
+  }
 
   // ── Flechas de navegación ────────────────────────────────────
   contenedor.addEventListener('scroll', actualizarDots, { passive: true });
@@ -762,6 +791,12 @@ function renderServicios() {
 
   contenedor.scrollLeft = 0;
 }
+
+function toggleVistaServicios() {
+  srvModoVista = srvModoVista === 'carrusel' ? 'grilla' : 'carrusel';
+  renderServicios();
+}
+window.toggleVistaServicios = toggleVistaServicios;
 
 function filtrarServicios(cat) {
   srvCategoriaActiva = cat;
@@ -970,10 +1005,16 @@ function renderEquipo() {
  * - Activa el listener para bloquear horas cuando cambia fecha o profesional.
  */
 function initFormulario() {
-  // Select de servicios
+  // Select de servicios — agrupado por categoría con <optgroup>
   const selServicio = document.getElementById('f-servicio');
+  const categoriasSrv = [...new Set(SERVICIOS.map(s => s.categoria))];
   selServicio.innerHTML = '<option value="">— Selecciona servicio —</option>' +
-    SERVICIOS.map(s => `<option value="${s.nombre}">${s.nombre}</option>`).join('');
+    categoriasSrv.map(cat => {
+      const serviciosDeCategoria = SERVICIOS.filter(s => s.categoria === cat);
+      return `<optgroup label="✦ ${cat}">` +
+        serviciosDeCategoria.map(s => `<option value="${s.nombre}">${s.emoji} ${s.nombre}</option>`).join('') +
+        `</optgroup>`;
+    }).join('');
 
   // Select de profesionales
   const selProfesional = document.getElementById('f-profesional');

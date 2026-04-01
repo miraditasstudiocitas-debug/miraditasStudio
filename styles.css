@@ -346,6 +346,14 @@ nav a:hover::after       { transform: scaleX(1); }
 .servicios-carousel-wrap {
   position: relative; overflow: hidden;
 }
+/* En modo grilla el wrapper no debe cortar el contenido */
+.servicios-carousel-wrap:has(.srv-modo-grilla) {
+  overflow: visible;
+}
+.servicios-carousel-wrap:has(.srv-modo-grilla)::before,
+.servicios-carousel-wrap:has(.srv-modo-grilla)::after {
+  display: none;
+}
 .servicios-carousel-wrap::before,
 .servicios-carousel-wrap::after {
   content: ''; position: absolute; top: 0; bottom: 0; width: 60px; z-index: 2; pointer-events: none;
@@ -393,6 +401,7 @@ nav a:hover::after       { transform: scaleX(1); }
 /* ── Dots indicadores ── */
 .srv-dots {
   display: flex; justify-content: center; gap: .45rem; margin-top: .8rem;
+  align-items: center;
 }
 .srv-dot {
   width: 7px; height: 7px; border-radius: 50%;
@@ -400,6 +409,33 @@ nav a:hover::after       { transform: scaleX(1); }
   transition: all .3s;
 }
 .srv-dot.active { background: var(--rose-deep); width: 22px; border-radius: 4px; }
+.srv-dots-count {
+  font-size: .75rem; color: var(--muted); margin-left: .4rem;
+  font-weight: 500;
+}
+
+/* ── Botón "Ver todos" ── */
+.srv-tab-ver-todos {
+  margin-left: .5rem;
+  border: 2px dashed rgba(155,58,90,.35) !important;
+  color: var(--rose-deep) !important;
+}
+.srv-tab-ver-todos:hover {
+  background: rgba(155,58,90,.06) !important;
+  border-color: var(--rose-deep) !important;
+}
+
+/* ── Modo grilla (cuando se presiona "Ver todos") ── */
+.servicios-track.srv-modo-grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  overflow-x: visible;
+  scroll-snap-type: none;
+  gap: 1.4rem;
+}
+.servicios-track.srv-modo-grilla .srv-card {
+  flex: none;
+}
 
 /* Tarjeta individual de servicio */
 .srv-card {
