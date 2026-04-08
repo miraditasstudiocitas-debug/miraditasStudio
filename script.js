@@ -430,6 +430,16 @@ const EQUIPO = [
     foto: 'fotos/diana.jpeg',
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
+  {
+    nombre: 'Laura Alfonso/Manicurista',
+    cargo: 'Manicurista',
+    especialidad: 'Todas las técnicas',
+    experiencia: '3 años',
+    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
+    emoji: '🧖‍♀️',
+    foto: 'fotos/laura.png',
+    tags: ['Gel', 'Acrílico', 'Nail Art']
+  },
 
  
 
