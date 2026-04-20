@@ -409,17 +409,7 @@ const EQUIPO = [
     foto: 'fotos/vanesa.jpeg',
     tags: ['Extensiones', 'Lifting', 'Tinte']
   },
-  {
-    nombre: 'Lizeth Niño/Lashista',
-    cargo: 'Especialista Lashes',
-    especialidad: 'Cejas y Pestañas',
-    experiencia: '2 años',
-    desc: 'Artista de la mirada con certificación',
-    emoji: '💁',
-    foto: 'fotos/lizeth.jpeg',
-    tags: ['Extensiones', 'Lifting', 'Tinte']
-  },
-
+  
   {
     nombre: 'Diana Gómez/Manicurista',
     cargo: 'Manicurista',
@@ -430,19 +420,7 @@ const EQUIPO = [
     foto: 'fotos/diana.jpeg',
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
-  {
-    nombre: 'Laura Alfonso/Manicurista',
-    cargo: 'Manicurista',
-    especialidad: 'Todas las técnicas',
-    experiencia: '3 años',
-    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
-    emoji: '🧖‍♀️',
-    foto: 'fotos/laura.png',
-    tags: ['Gel', 'Acrílico', 'Nail Art']
-  },
-
- 
-
+  
   {
     nombre: 'Dayana Casallas/Manicurista',
     cargo: 'Manicurista',
@@ -453,17 +431,7 @@ const EQUIPO = [
     foto: 'fotos/dayana.jpeg',
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
-  {
-    nombre: 'Angie Villamizar/Manicurista',
-    cargo: 'Manicurista/Sábados',
-    especialidad: 'Todas las técnicas',
-    experiencia: '4 años',
-    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
-    emoji: '🧖‍♀️',
-    foto: 'fotos/angie.png',
-    tags: ['Gel', 'Acrílico', 'Nail Art']
-  },
-
+  
   {
     nombre: 'Andrea Rincón/Gerente',
     cargo: 'Gerente',
