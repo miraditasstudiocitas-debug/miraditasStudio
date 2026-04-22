@@ -409,18 +409,7 @@ const EQUIPO = [
     foto: 'fotos/vanesa.jpeg',
     tags: ['Extensiones', 'Lifting', 'Tinte']
   },
-  
-  {
-    nombre: 'Diana Gómez/Manicurista',
-    cargo: 'Manicurista',
-    especialidad: 'Todas las técnicas',
-    experiencia: '20 años',
-    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
-    emoji: '🧖‍♀️',
-    foto: 'fotos/diana.jpeg',
-    tags: ['Gel', 'Acrílico', 'Nail Art']
-  },
-  
+     
   {
     nombre: 'Dayana Casallas/Manicurista',
     cargo: 'Manicurista',
