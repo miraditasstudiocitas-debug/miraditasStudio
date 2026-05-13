@@ -409,15 +409,35 @@ const EQUIPO = [
     foto: 'fotos/vanesa.jpeg',
     tags: ['Extensiones', 'Lifting', 'Tinte']
   },
+   {
+    nombre: 'Lina Sofia/Lashista',
+    cargo: 'Especialista Lashes',
+    especialidad: 'Cejas y Pestañas',
+    experiencia: '2 años',
+    desc: 'Artista de la mirada con certificación',
+    emoji: '💁',
+    foto: 'fotos/sofia.jpeg',
+    tags: ['Extensiones', 'Lifting', 'Tinte']
+  },
      
   {
-    nombre: 'Dayana Casallas/Manicurista',
+    nombre: 'Laura Alfonso/Manicurista',
     cargo: 'Manicurista',
     especialidad: 'Todas las técnicas',
     experiencia: '4 años',
     desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
     emoji: '🧖‍♀️',
-    foto: 'fotos/dayana.jpeg',
+    foto: 'fotos/laura.jpeg',
+    tags: ['Gel', 'Acrílico', 'Nail Art']
+  },
+   {
+    nombre: 'Valentina/Manicurista',
+    cargo: 'Manicurista',
+    especialidad: 'Todas las técnicas',
+    experiencia: '4 años',
+    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
+    emoji: '🧖‍♀️',
+    foto: 'fotos/valentina.jpeg',
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
   
