@@ -416,7 +416,7 @@ const EQUIPO = [
     experiencia: '2 años',
     desc: 'Artista de la mirada con certificación',
     emoji: '💁',
-    foto: 'fotos/sofia.jpeg',
+    foto: 'fotos/sofia.png',
     tags: ['Extensiones', 'Lifting', 'Tinte']
   },
      
@@ -427,7 +427,7 @@ const EQUIPO = [
     experiencia: '4 años',
     desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
     emoji: '🧖‍♀️',
-    foto: 'fotos/laura.jpeg',
+    foto: 'fotos/laura.png',
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
    {
@@ -437,7 +437,7 @@ const EQUIPO = [
     experiencia: '4 años',
     desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
     emoji: '🧖‍♀️',
-    foto: 'fotos/valentina.jpeg',
+    foto: 'fotos/valentina.png',
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
   
