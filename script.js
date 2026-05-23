@@ -440,6 +440,16 @@ const EQUIPO = [
     foto: 'fotos/valentina.png',
     tags: ['Gel', 'Acrílico', 'Nail Art']
   },
+   {
+    nombre: 'Dayana Casallas/Manicurista',
+    cargo: 'Manicurista',
+    especialidad: 'Todas las técnicas',
+    experiencia: '6 años',
+    desc: 'Diseñadora de uñas en todas las técnicas y los más increíbles diseños artísticos.',
+    emoji: '🧖‍♀️',
+    foto: 'fotos/dayana.jpeg',
+    tags: ['Gel', 'Acrílico', 'Nail Art']
+  },
   
   {
     nombre: 'Andrea Rincón/Gerente',
