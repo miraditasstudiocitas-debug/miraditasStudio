@@ -400,13 +400,13 @@ const SERVICIOS = [
  */
 const EQUIPO = [
   {
-    nombre: 'Vanesa Herrera/Lashista',
+    nombre: 'Maria fernanda/Lashista',
     cargo: 'Especialista Lashes',
     especialidad: 'Cejas y Pestañas',
     experiencia: '2 años',
     desc: 'Artista de la mirada con certificación',
     emoji: '💁',
-    foto: 'fotos/vanesa.jpeg',
+    foto: 'fotos/mafe.jpeg',
     tags: ['Extensiones', 'Lifting', 'Tinte']
   },
    {
