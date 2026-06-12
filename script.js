@@ -406,7 +406,7 @@ const EQUIPO = [
     experiencia: '2 años',
     desc: 'Artista de la mirada con certificación',
     emoji: '💁',
-    foto: 'fotos/mafe.jpeg',
+    foto: 'fotos/mafe.png',
     tags: ['Extensiones', 'Lifting', 'Tinte']
   },
    {
