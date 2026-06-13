@@ -400,7 +400,7 @@ const SERVICIOS = [
  */
 const EQUIPO = [
   {
-    nombre: 'Maria fernanda/Lashista',
+    nombre: 'Mafer/Lashista',
     cargo: 'Especialista Lashes',
     especialidad: 'Cejas y Pestañas',
     experiencia: '2 años',
