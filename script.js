@@ -399,6 +399,16 @@ const SERVICIOS = [
  *    3. El campo 'foto' ya apunta a esa ruta. Si no existe, se usa el emoji.
  */
 const EQUIPO = [
+   {
+    nombre: 'Mariana Monroy/Lashista',
+    cargo: 'Especialista Lashes',
+    especialidad: 'Cejas y Pestañas',
+    experiencia: '2 años',
+    desc: 'Artista de la mirada con certificación',
+    emoji: '💁',
+    foto: 'fotos/mafe.png',
+    tags: ['Extensiones', 'Lifting', 'Tinte']
+  },
   {
     nombre: 'Mafer/Lashista',
     cargo: 'Especialista Lashes',
