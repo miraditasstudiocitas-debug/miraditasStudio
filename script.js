@@ -399,7 +399,16 @@ const SERVICIOS = [
  *    3. El campo 'foto' ya apunta a esa ruta. Si no existe, se usa el emoji.
  */
 const EQUIPO = [
-   
+    {
+    nombre: 'Kiara/Lashista',
+    cargo: 'Especialista Lashes',
+    especialidad: 'Cejas y Pestañas',
+    experiencia: '2 años',
+    desc: 'Artista de la mirada con certificación',
+    emoji: '🦇',
+    foto: 'fotos/yireth.png',
+    tags: ['Extensiones', 'Lifting', 'Tinte']
+  },
   {
     nombre: 'Yireth/Lashista',
     cargo: 'Especialista Lashes',
