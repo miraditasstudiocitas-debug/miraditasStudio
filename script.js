@@ -410,17 +410,6 @@ const EQUIPO = [
     tags: ['Extensiones', 'Lifting', 'Tinte']
   },
   
-   {
-    nombre: 'Lina Sofia/Lashista',
-    cargo: 'Especialista Lashes',
-    especialidad: 'Cejas y Pestañas',
-    experiencia: '2 años',
-    desc: 'Artista de la mirada con certificación',
-    emoji: '💁',
-    foto: 'fotos/sofia.png',
-    tags: ['Extensiones', 'Lifting', 'Tinte']
-  },
-     
   {
     nombre: 'Laura Alfonso/Manicurista',
     cargo: 'Manicurista',
